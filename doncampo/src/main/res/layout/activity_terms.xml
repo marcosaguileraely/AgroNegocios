@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cool4code.doncampoapp.TermsActivity"
+    android:background="#ffe8bb">
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:layout_weight="1"
+        android:layout_above="@+id/relativeLayout_button"
+        android:padding="20dp"
+        android:fillViewport="false"
+        android:id="@+id/ScrollView_terms">
+        <TextView android:id="@+id/Terms_Text" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Términos y condiciones de uso de la aplicación para dispositivos móviles\n\n 1. Generalidades. \n1.1 Al instalar esta aplicación (tal como se define abajo), el usuario acepta los presentes términos de uso. Deben leerse detenidamente antes de instalar la aplicación y/o aceptar los términos. \n1.2  Agronegocios (Agronet\Minagricultura) se reserva el derecho a cambiar o modificar cualquiera de los términos y condiciones contenidos en las presentes condiciones o en cualquier política del servicio, en cualquier momento y a su total discreción. Cualquier cambio o modificación será efectivo o publicado en el sitio web ubicado en http://www.agronet.gov.co/agronetweb1/Agronegocios.aspx o en la aplicación Agronegocios.  \n\n2. Definiciones. \nPor aplicación se entiende el software facilitado por Agronegocios (Agronet\Minagricultura), sus servicios para ser utilizado en dispositivos con los sistemas operativos Apple iOS, Android OS y web así como sus actualizaciones periódicas y cualquier otro software o documentación que permita utilizar esta app. \n\n3. Protección de Datos. \nCualquier información personal que se facilite a Agronegocios (Agronet\Minagricultura), durante el uso de la aplicación se utilizará únicamente con la política de privacidad de Agronegocios. *Política de Privacidad: Agronet\Minagricultura se compromete a proteger su privacidad. \n\n4.Agronegocios. \nLa aplicación permite acceder a determinadas funciones disponibles en el sitio web de Agronegocios.  \n\n5. Licencia de Derechos de Propiedad.\n 5.1 Todas las marcas, derechos de autor, bases de datos y otros derechos de propiedad intelectual de la Aplicación, cualquiera que sea su naturaleza, así como el código fuente, son propiedad de Agronegocios (Agronet\Minagricultura) o los licenciados de Agronegocios (Agronet\Minagricultura). \n\n6. Condiciones de Uso. \n6.1El usuario no actuará ni permitirá que terceras personas actúen en su nombre para (i)hacer y distribuir copias de la aplicación; (ii)intentar copiar, reproducir, alterar, modificar, hacer ingeniería inversa, desarmar, descompilar, transferir, intercambiar o traducir la aplicación; (iii)si va a crear un proyecto derivado de la aplicación consultar primero con Agronegocios (Agronet\Minagricultura) para dar el aval. La aplicación se entregará al usuario de manera gratuita para su uso personal (para comercializar sus productos y servicios). Agronegocios (Agronet\Minagricultura) se reserva el derecho a modificar o deshabilitar la Aplicación en cualquier momento y por cualquier motivo. El usuario acepta que los términos del acuerdo con el proveedor de su red móvil (Proveedores de Servicios Móviles) continuarán en vigor durante el uso de la aplicación. En consecuencia es posible que el Proveedor de Servicios Móviles cobre por los servicios de conexión a la red mientras la Aplicación permanezca conectada a la red, o que se produzcan cargos económicos de terceros. El usuario acepta la responsabilidad de los cargos que pudieran surgir. Si el usuario no es titular de la facturación del teléfono o dispositivo móvil utilizado para acceder a la aplicación, se asumirá que tiene permisos de titular para utilizar la Aplicación. \n\n7. Disponibilidad. \n7.1Esta Aplicación está disponible para los dispositivos móviles portátiles que funcionen con los sistemas operativos Apple iOS y android OS. Agronegocios (Agronet\Minagricultura) hará todos los esfuerzos razonables para que la Aplicación esté disponible en todo momento. No obstante, el usuario acepta que la entrega de la Aplicación se realizará a través de internet y de las redes móviles y que, en consecuencia, la calidad y la disponibilidad de la Aplicación pueden verse afectadas por factores ajenos al control responsable de Agronegocios (Agronet\Minagricultura). Agronegocios (Agronet\Minagricultura) no se hará responsable del servicio técnico o del mantenimiento de la aplicación. Agronegocios (Agronet\Minagricultura) y sus subcontratistas no se hacen responsables de la no disponibilidad de la Aplicación, de las dificultades o de la imposibilidad de descargar o acceder  a su contenido, ni de ningún otro fallo que pudiera provocar que la Aplicación no este disponible. \n\n8. Requisitos del Sistema. \n8.1 Para poder utilizar la Aplicación, el usuario debe tener un teléfono o dispositivo móvil compatible, con conexión a internet y que cumpla las especificaciones mínimas (Requisitos del software). Los requisitos del software son los siguientes:  \n\n\t - Sistema Operativo Android Verisón 2.3.3 o superior. \n\t - RAM: 128 Mb \n\nLa versión del software de la Aplicación puede sufrir actualizaciones periódicas para añadir compatibilidad con nuevas funciones y servicios. \n\n 9. Finalización. \n9.1Agronegocios (Agronet\Minagricultura) puede finalizar el uso de la Aplicación en cualquier momento previa notificación al usuario. Al finalizar dicho uso, (a) también se pondrá fin a todos los derechos y licencias otorgados al usuario; (b) el usuario deberá dejar de utilizar el software. \n\n 10. Limitación de Responsabilidades. \n10.1 En ningún caso se podrá hacer responsable a Agronegocios (Agronet\Minagricultura) de ningún tipo de pérdidas o daños directos, indirectos, especiales, punitivos, ejemplares o consecuentes, derivados del uso o del acceso a la Aplicación, incluida la pérdida de beneficios y similares, se deban o no a la falta de cumplimiento por parte de las partes, ya sea por infracción del contrato, agravio (incluida negligencia), responsabilidad del producto u otros. Agronegocios (Agronet\Minagricultura), no se hará responsable de ningún daño o alteración en los equipos del usuario como resultado de la instalación o el uso de la Aplicación, incluyendo, pero sin limitarse a, equipos informáticos, dispositivos portátiles o teléfonos móviles. Ningún  aspecto de estos términos de la aplicación excluye o limita  la responsabilidad de Agronegocios (Agronet\Minagricultura) en relación a lesiones personales o la muerte por negligencia, el fraude o las distorsiones fraudulentas, o cualquier otra responsabilidad que no pueda excluir o limitar por la ley. \n\n 11. Exención de Responsabilidad para las Garantías. Con el fin de evitar dudas y de acuerdo al máximo permitido por la ley, Agronegocios (Agronet\Minagricultura) se exime de cualquier responsabilidad en relación a todas las garantías implícitas derivadas de la aplicación. La Aplicación y el software se suministran “tal cual” y “tal como están disponibles” sin ningún tipo de garantía. "
+            android:textSize="12dp"></TextView>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#0099CC"
+        android:id="@+id/relativeLayout_button">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aceptar terminos"
+                android:drawableTop="@drawable/abc_ic_cab_done_holo_dark"
+                android:gravity="center"
+                android:id="@+id/accept_conditions"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="#669900" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

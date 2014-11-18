@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cool4code.doncampoapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/title_activity_intro"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClientSecurityActivity"
+            android:label="@string/title_activity_client_security"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FarmerHome"
+            android:label="@string/title_activity_farmer_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AprendozActivity"
+            android:label="@string/title_activity_aprendoz"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FarmerOrder"
+            android:label="@string/title_activity_farmer_order"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FarmerStock"
+            android:label="@string/title_activity_farmer_stock"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ClientHome"
+            android:label="@string/title_activity_client_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RestfulActivity"
+            android:label="@string/title_activity_restful"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NewStockForm"
+            android:label="@string/title_activity_new_stock_form"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".actions_elements"
+            android:label="@string/title_activity_actions_elements"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".SingUp"
+            android:label="@string/title_activity_sing_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TermsActivity"
+            android:label="@string/title_activity_terms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ClientMarketDetails"
+            android:label="@string/title_activity_client_market_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ClientBuy"
+            android:label="@string/title_activity_client_buy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ClientPaysHistory"
+            android:label="@string/title_activity_client_pays_history"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FarmerOrderDetails"
+            android:label="@string/title_activity_farmer_order_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ClientHistoryDetails"
+            android:label="@string/title_activity_history_details"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cool4code.doncampoapp.ClientHome"
+    android:background="#ffe8bb">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/farmerregister"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/tips_clave" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView"
+        android:layout_above="@+id/relativeLayout">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/marketListView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:choiceMode="singleChoice"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_below="@+id/tips_clave"
+            android:descendantFocusability="blocksDescendants"
+            android:textIsSelectable="false"
+            android:focusable="false"
+            android:layout_weight="0.55" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="¡Buenas! \nPara empezar seleccione un producto"
+        android:id="@+id/tips_clave"
+        android:textSize="20dp"
+        android:textColor="#ec4b48"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FF4444"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/ic_menu_myplaces"
+                android:text="      Placita       "
+                android:id="@+id/client_home_ofertas"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="#ff4444"
+                android:enabled="true"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/ic_menu_directions"
+                android:text="Mis compras"
+                android:id="@+id/client_home_pedidos"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:background="#ff4444"
+                android:enabled="true"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/ic_menu_info_details"
+                android:text="Aprende"
+                android:id="@+id/share_twitter"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/client_home_ofertas"
+                android:background="#ff4444"
+                android:layout_weight="1" />
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

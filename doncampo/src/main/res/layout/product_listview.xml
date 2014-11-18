@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:id="@+id/mainLayout">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:padding="1dp"
+        android:background="#ffe8bb">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:id="@+id/pricesLayoutVertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/product_nameBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_toRightOf="@+id/ranklabel"
+                    android:text="Product"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/product_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ambiente"
+                    android:layout_toRightOf="@+id/countrylabel"
+                    android:text="Location"
+                    android:textSize="12dp"
+                    android:capitalize="none"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="$ 00.00"
+                    android:id="@+id/product_avg"
+                    android:layout_gravity="right"
+                    android:gravity="bottom|right"
+                    android:numeric="signed|decimal" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="x KG"
+                    android:id="@+id/product_unit"
+                    android:layout_gravity="right"
+                    android:gravity="right" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </TableRow>
+
+</LinearLayout>

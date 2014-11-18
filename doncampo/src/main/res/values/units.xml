@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unidades">
+        <item>Elija unidad</item>
+        <item>KG - Kilogramo(s)</item>
+        <item>HG - Hectogramo(s)</item>
+        <item>DG - Decagramo(s)</item>
+        <item>g - gramo(s)</item>
+        <item>dg - decigramo(s)</item>
+        <item>TN - Tonelada(s)</item>
+        <item>QT - Quintal(es)</item>
+        <item>lb - Libra(s)</item>
+        <item>ARR - Arroba(s)</item>
+        <item>ONZ - Onza(s)</item>
+    </string-array>
+</resources>

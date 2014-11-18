@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cool4code.doncampoapp.ClientPaysHistory"
+    android:background="#ffe8bb">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Historial de mis compras"
+            android:id="@+id/tips_clave"
+            android:textSize="18dp"
+            android:textColor="#ec4b48"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/historyListView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:choiceMode="singleChoice"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_below="@+id/tips_clave"
+            android:descendantFocusability="blocksDescendants"
+            android:textIsSelectable="false"
+            android:focusable="false"
+            android:layout_weight="0.44" />
+
+    </LinearLayout>
+
+</RelativeLayout>

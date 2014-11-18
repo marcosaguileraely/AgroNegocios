@@ -1,0 +1,38 @@
+{ "android" :
+    [ { "api" : "API level 3",
+        "name" : "Cupcake",
+        "ver" : "1.5"
+      },
+      { "api" : "API level 4",
+        "name" : "Donut",
+        "ver" : "1.6"
+      },
+      { "api" : "API level 5-7",
+        "name" : "Eclair",
+        "ver" : "2.0-2.1"
+      },
+      { "api" : "API level 8",
+        "name" : "Froyo",
+        "ver" : "2.2"
+      },
+      { "api" : "API level 9-10",
+        "name" : "Gingerbread",
+        "ver" : "2.3"
+      },
+      { "api" : "API level 11-13",
+        "name" : "Honeycomb",
+        "ver" : "3.0-3.2"
+      },
+      { "api" : "API level 14-15",
+        "name" : "Ice Cream Sandwich",
+        "ver" : "4.0"
+      },
+      { "api" : "API level 16-18",
+        "name" : "JellyBean",
+        "ver" : "4.1-4.3"
+      },
+      { "api" : "API level 19",
+        "name" : "KitKat",
+        "ver" : "4.4"
+      } ]
+}

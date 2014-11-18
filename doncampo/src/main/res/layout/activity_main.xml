@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cool4code.doncampoapp.MainActivity"
+    android:background="#ffe8bb">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="¿Quién soy?"
+            android:id="@+id/home_text_encabezado"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="#669900"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione un modo de acceso"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/home_text_encabezado"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="18dp" />
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_img_farmer"
+            android:src="@drawable/home_farmer2_"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/home_img_client"
+                android:layout_alignStart="@+id/home_img_client"
+                android:layout_gravity="center_horizontal"
+            android:layout_weight="0.24" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_img_client"
+                android:src="@drawable/home_farmer1_new"
+                android:layout_below="@+id/home_img_farmer"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.24" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.26"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Salir"
+                android:id="@+id/home_salir"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#ff4444"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/ic_menu_share"
+                android:text="Facebook"
+                android:id="@+id/share_facebook"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:layout_alignTop="@+id/client_home_ofertas"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#4099FF"
+                android:enabled="true"
+                android:layout_toLeftOf="@+id/share_twitter"
+                android:layout_toStartOf="@+id/share_twitter"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/ic_menu_share"
+                android:text="Twitter"
+                android:id="@+id/share_twitter"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/client_home_ofertas"
+                android:background="#4099FF"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/ic_menu_info_details"
+                android:text="Acerca de"
+                android:id="@+id/about"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/client_home_ofertas"
+                android:background="#4099FF"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

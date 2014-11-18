@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Agronegocios</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Acerca de...</string>
+    <string name="title_activity_intro">Agronegocios</string>
+    <string name="title_activity_farmer_security">Acceso usuarios</string>
+    <string name="title_activity_client_security">Acceso usuarios</string>
+    <string name="title_activity_farmer_home">Soy Productor</string>
+    <string name="title_activity_client_home">Soy Comprador</string>
+    <string name="title_activity_aprendoz">Tips sobre finanzas</string>
+    <string name="title_activity_farmer_order">Mis pedidos</string>
+    <string name="title_activity_farmer_stock">Mi inventario</string>
+    <string name="action_search">Redes sociales</string>
+    <string name="title_activity_restful">RestfulActivity</string>
+    <string name="stock_action_new">Nuevo inventario</string>
+    <string name="title_activity_new_stock_form">Nuevo inventario</string>
+    <string name="title_activity_actions_elements">actions_elements</string>
+    <string name="title_activity_rest_ful_getter">RestFulGetter</string>
+    <string name="title_activity_search">Precios</string>
+    <string name="title_activity_sing_up">Registro de usuario</string>
+    <string name="title_activity_terms">Terminos y condiciones</string>
+    <string name="title_activity_client_market_details">Detalles</string>
+    <string name="title_activity_client_buy">Comprar producto</string>
+    <string name="title_activity_client_pays_history">Mis compras</string>
+    <string name="title_activity_farmer_order_details">Detalles</string>
+    <string name="title_activity_history_details">Detalles</string>
+
+</resources>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cool4code.doncampoapp.SearchActivity"
+    android:background="#ffe8bb">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_product"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Buscar por producto o mercado"
+        android:nextFocusUp="@id/search_product"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_productListView"
+        android:layout_centerHorizontal="true"
+        android:choiceMode="singleChoice"
+        android:layout_above="@+id/relativeLayout_button"
+        android:layout_below="@+id/search_product" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#0099CC"
+        android:id="@+id/relativeLayout_button">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iniciar sesion"
+                android:drawableTop="@drawable/ic_action_person"
+                android:gravity="center"
+                android:id="@+id/search_home_ingresar"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="#669900" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

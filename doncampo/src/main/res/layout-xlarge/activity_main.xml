@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cool4code.doncampoapp.MainActivity"
+    android:background="#ffe8bb">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView8"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/vertical_layout_xlarge">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="¿Quién soy?"
+            android:id="@+id/home_text_encabezado"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="#669900"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione un modo de acceso"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/home_text_encabezado"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="40dp" />
+
+        <ImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:id="@+id/home_img_farmer"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/home_farmer2_"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/home_img_client"
+                android:layout_alignStart="@+id/home_img_client"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:id="@+id/home_img_client"
+                android:src="@drawable/home_farmer1_new"
+                android:layout_below="@+id/home_img_farmer"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+</RelativeLayout>

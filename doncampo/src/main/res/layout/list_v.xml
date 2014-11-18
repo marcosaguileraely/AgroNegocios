@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:weightSum="1"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:weightSum="1"
+        android:padding="1dp">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/media_sandia" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.68"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/vers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/api"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dirección"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.26">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="100 ARR"
+                android:id="@+id/tips_clave"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="300 $"
+                android:id="@+id/mystock_unit"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="30.000 $"
+                android:id="@+id/textView3"
+                android:textStyle="italic"
+                android:gravity="right" />
+        </LinearLayout>
+
+    </TableRow>
+
+</LinearLayout>
