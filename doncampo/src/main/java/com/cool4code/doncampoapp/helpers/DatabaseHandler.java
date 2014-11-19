@@ -90,23 +90,22 @@ public class DatabaseHandler extends SQLiteOpenHelper{
         return token_str;
     }
 
-    public String validateExpiresAt(String table_name){
-        String selectQuery = "SELECT  _expires FROM " + table_name;
+    public long validateExpiresAt(String table_name){
+        String selectQuery = "SELECT  miliExpires FROM " + table_name;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
-        String date_str = null;
+
         long millis = 0;
 
         if ( cursor.moveToFirst () ) {
             do {
-                date_str = String.valueOf(cursor.getString(0));
+                millis = cursor.getLong(0);
             } while (cursor.moveToNext());
         }
-
         // closing connection
         cursor.close();
         db.close();
-        return date_str;
+        return millis;
     }
 
     @Override
