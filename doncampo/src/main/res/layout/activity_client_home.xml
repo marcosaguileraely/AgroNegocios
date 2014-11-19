@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/imageView"
+        android:id="@+id/logo_agronet"
         android:src="@drawable/farmerregister"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -19,7 +19,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/logo_agronet"
         android:layout_above="@+id/relativeLayout">
 
         <ListView
@@ -47,7 +47,7 @@
         android:textSize="20dp"
         android:textColor="#ec4b48"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView" />
+        android:layout_toRightOf="@+id/logo_agronet" />
 
     <RelativeLayout
         android:layout_width="fill_parent"

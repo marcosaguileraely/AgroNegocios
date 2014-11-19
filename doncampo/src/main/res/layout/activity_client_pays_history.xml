@@ -24,7 +24,7 @@
             android:textSize="18dp"
             android:textColor="#ec4b48"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/imageView"
+            android:layout_toRightOf="@+id/logo_agronet"
             android:gravity="center_horizontal" />
     </LinearLayout>
 

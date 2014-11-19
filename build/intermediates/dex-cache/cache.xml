@@ -2,6 +2,12 @@
 <pre-dex-items>
 
     <item
+        dex="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-ca079538ec39e03fb960b6a6dbc47832e248d993.jar"
+        jar="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
         dex="/Users/marcosantonioaguilerely/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/classes-2e5bf185a0a8b876f90e5fe11a3e4ba88e0feb07.jar"
         jar="/Users/marcosantonioaguilerely/DonCampoApp/doncampo/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/20.0.0/classes.jar"
         jumboMode="false"
@@ -20,11 +26,29 @@
         revision="19.1.0"
         sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
     <item
+        dex="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/classes-0f3e3d9a4c468d662a0153f20225a65316d29645.jar"
+        jar="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+    <item
         dex="/Users/marcosantonioaguilerely/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/Parse-1.5.1-39478458cd72f333fa8919da4f18983496363175.jar"
         jar="/Users/marcosantonioaguilerely/DonCampoApp/doncampo/libs/Parse-1.5.1.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="3d645417e7780d44f32e29a3ec6b729b75aef26c"/>
+    <item
+        dex="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/classes-3a33f595b49710a4243892bf307c959425465df8.jar"
+        jar="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/classes-ba75937ab1c1295ffc950e6f08e4fc924d2453bd.jar"
+        jar="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e5531cb41e35c81a051a274945542f6b31e4c97e"/>
     <item
         dex="/Users/marcosantonioaguilerely/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/classes-0b9d620a88fddad531199e42d74bdb6846d6caa1.jar"
         jar="/Users/marcosantonioaguilerely/DonCampoApp/doncampo/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
@@ -37,5 +61,11 @@
         jumboMode="false"
         revision="19.1.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/Parse-1.5.1-76ab7dac38209f5569551e558d40781cfb7098d2.jar"
+        jar="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/libs/Parse-1.5.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3d645417e7780d44f32e29a3ec6b729b75aef26c"/>
 
 </pre-dex-items>

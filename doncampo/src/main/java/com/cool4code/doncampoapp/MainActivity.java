@@ -35,6 +35,8 @@ public class MainActivity extends ActionBarActivity{
     ImageView clients;
     Button share_facebook;
     Button share_twitter;
+    Button about;
+
     ArrayAdapter<String> listAdapter;
     ListView list;
     String[] rank;
@@ -62,10 +64,11 @@ public class MainActivity extends ActionBarActivity{
             abTitle.setTextColor(textColor);
         }
 
-        farmers= (ImageView) findViewById(R.id.home_img_farmer);
-        clients= (ImageView) findViewById(R.id.home_img_client);
+        farmers        = (ImageView) findViewById(R.id.home_img_farmer);
+        clients        = (ImageView) findViewById(R.id.home_img_client);
         share_facebook = (Button) findViewById(R.id.share_facebook);
-        share_twitter = (Button) findViewById(R.id.share_twitter);
+        share_twitter  = (Button) findViewById(R.id.share_twitter);
+        about          = (Button) findViewById(R.id.about);
 
         farmers.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -134,6 +137,13 @@ public class MainActivity extends ActionBarActivity{
                     Toast.makeText(MainActivity.this, "¡Twitter app no esta instalada en el dispositivo!", Toast.LENGTH_SHORT).show();
                 }
                 startActivity(intent);
+            }
+        });
+
+        about.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent goToLogin= new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(goToLogin);
             }
         });
 
