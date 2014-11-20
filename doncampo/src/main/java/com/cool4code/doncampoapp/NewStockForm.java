@@ -117,6 +117,8 @@ public class NewStockForm extends ActionBarActivity{
         save_data = (Button) findViewById(R.id.save_stock_data);
         date_picker = (Button) findViewById(R.id.date_picker_selector);
 
+        save_data.setEnabled(true);
+
         units.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
                 //nothing to do
@@ -154,6 +156,7 @@ public class NewStockForm extends ActionBarActivity{
 
         save_data.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                save_data.setEnabled(false);
                 int productId = Integer.parseInt(String.valueOf( ((SpinnerObject) products.getSelectedItem()).getId()) );
                 int unitId = Integer.parseInt(String.valueOf(((SpinnerObject) units.getSelectedItem()).getId()));
 
@@ -248,6 +251,7 @@ public class NewStockForm extends ActionBarActivity{
         // attaching data adapter to spinner
         units.setAdapter(dataAdapter);
     }
+
     //Funcion cargar los datos del selector Productos
     private void loadSpinnerDataProduct() {
         String table_name = "products";
@@ -263,6 +267,7 @@ public class NewStockForm extends ActionBarActivity{
         // attaching data adapter to spinner
         products.setAdapter(dataAdapter);
     }
+
     //Verificar existencia de la tabla de unidades
     public Boolean existUnitTable(){
         SQLiteDatabase mDatabase = openOrCreateDatabase("placitadb", SQLiteDatabase.CREATE_IF_NECESSARY,null);
@@ -279,6 +284,7 @@ public class NewStockForm extends ActionBarActivity{
         }
         return tableExists;
     }
+
     //Verificar existencia de la tabla de productos
     public Boolean existProductTable(){
         SQLiteDatabase mDatabase = openOrCreateDatabase("placitadb", SQLiteDatabase.CREATE_IF_NECESSARY,null);
@@ -295,6 +301,7 @@ public class NewStockForm extends ActionBarActivity{
         }
         return tableExists;
     }
+
     //AsyncTask RemoteDataTask
     private class RemoteDataTask extends AsyncTask<Void, Void, Void> {
         @Override
@@ -408,6 +415,7 @@ public class NewStockForm extends ActionBarActivity{
             }
         }
     }
+
     //AsyncTask PostStockAT
     private class PostStockAT extends AsyncTask<Void, Void, Void> {
         @Override
@@ -443,6 +451,7 @@ public class NewStockForm extends ActionBarActivity{
             }
         }
     }
+
     //Metodo para obtener localizacion
     public Location getLocation() {
         try {
@@ -491,6 +500,7 @@ public class NewStockForm extends ActionBarActivity{
         }
         return location;
     }
+
     //Verificar si los campos estan vacios
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     public Boolean emptyFields(){
@@ -503,6 +513,7 @@ public class NewStockForm extends ActionBarActivity{
             return true;
         }
     }
+
     //Mostrar dialogo para activar gps
     private void showGPSDisabledAlertToUser(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -525,6 +536,7 @@ public class NewStockForm extends ActionBarActivity{
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
     }
+
     //Verificar y ejecutar metodos
     @Override
     protected void onResume(){
