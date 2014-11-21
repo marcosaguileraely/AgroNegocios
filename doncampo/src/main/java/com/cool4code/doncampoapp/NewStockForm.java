@@ -156,7 +156,6 @@ public class NewStockForm extends ActionBarActivity{
 
         save_data.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                save_data.setEnabled(false);
                 int productId = Integer.parseInt(String.valueOf( ((SpinnerObject) products.getSelectedItem()).getId()) );
                 int unitId = Integer.parseInt(String.valueOf(((SpinnerObject) units.getSelectedItem()).getId()));
 
@@ -165,8 +164,10 @@ public class NewStockForm extends ActionBarActivity{
                 String date_data    = date.getText().toString();
 
                 if(qty_data.isEmpty() || price_data.isEmpty() || date_data.isEmpty()){
+                    save_data.setEnabled(true);
                     Toast.makeText(context, "¡Todos los campos son requeridos!" , Toast.LENGTH_SHORT).show();
                 }else{
+                    save_data.setEnabled(false);
                     double dqty         = Double.parseDouble(qty.getText().toString());
                     double dprice       = Double.parseDouble(price.getText().toString());
                     String expire_date  = date.getText().toString();

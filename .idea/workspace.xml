@@ -133,29 +133,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_history_details.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_history_details.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3660" max-vertical-offset="3795">
-              <caret line="244" column="19" selection-start-line="244" selection-start-column="19" selection-end-line="244" selection-end-column="19" />
-              <folding />
+      <file leaf-file-name="NewStockForm.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/NewStockForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46191248" vertical-offset="1455" max-vertical-offset="3390">
+              <caret line="166" column="47" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
+              <folding>
+                <element signature="method#loadSpinnerDataUnit#0;class#NewStockForm#0" expanded="false" />
+                <element signature="method#loadSpinnerDataProduct#0;class#NewStockForm#0" expanded="false" />
+                <element signature="method#existUnitTable#0;class#NewStockForm#0" expanded="false" />
+                <element signature="method#existProductTable#0;class#NewStockForm#0" expanded="false" />
+                <element signature="class#RemoteDataTask#0;class#NewStockForm#0" expanded="false" />
+                <element signature="class#PostStockAT#0;class#NewStockForm#0" expanded="false" />
+                <element signature="method#getLocation#0;class#NewStockForm#0" expanded="false" />
+                <element signature="method#emptyFields#0;class#NewStockForm#0" expanded="false" />
+                <element signature="method#showGPSDisabledAlertToUser#0;class#NewStockForm#0" expanded="false" />
+                <element signature="method#onResume#0;class#NewStockForm#0" expanded="false" />
+              </folding>
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_client_market_details.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_market_details.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3705">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -1301,9 +1296,9 @@
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/AboutActivity.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/ClientSecurityActivity.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_buy.xml" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/NewStockForm.java" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_new_stock_form.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_market_details.xml" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_new_stock_form.xml" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/NewStockForm.java" />
       </list>
     </option>
   </component>
@@ -1715,7 +1710,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1730,6 +1725,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36474165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4544073" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1744,7 +1740,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36474165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1888,16 +1883,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
           <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_farmer_stock.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="762" max-vertical-offset="1365">
-          <caret line="82" column="19" selection-start-line="61" selection-start-column="4" selection-end-line="82" selection-end-column="19" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -2174,37 +2159,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/NewStockForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.89465153" vertical-offset="1677" max-vertical-offset="3450">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding>
-            <element signature="e#5009#5856#0" expanded="true" />
-            <element signature="e#5845#5846#0" expanded="true" />
-            <element signature="e#5897#10224#0" expanded="true" />
-            <element signature="e#10213#10214#0" expanded="true" />
-            <element signature="method#loadSpinnerDataUnit#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#loadSpinnerDataProduct#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#existUnitTable#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#existProductTable#0;class#NewStockForm#0" expanded="false" />
-            <element signature="class#RemoteDataTask#0;class#NewStockForm#0" expanded="false" />
-            <element signature="class#PostStockAT#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#getLocation#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#emptyFields#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#showGPSDisabledAlertToUser#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#onResume#0;class#NewStockForm#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_new_stock_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37810946" vertical-offset="492" max-vertical-offset="1980">
-          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_market_details.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
@@ -2219,15 +2181,45 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_market_details.xml">
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_farmer_stock.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3675">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="762" max-vertical-offset="1365">
+          <caret line="82" column="19" selection-start-line="61" selection-start-column="4" selection-end-line="82" selection-end-column="19" />
           <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_new_stock_form.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12935324" vertical-offset="672" max-vertical-offset="1980">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/NewStockForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46191248" vertical-offset="1455" max-vertical-offset="3390">
+          <caret line="166" column="47" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
+          <folding>
+            <element signature="method#loadSpinnerDataUnit#0;class#NewStockForm#0" expanded="false" />
+            <element signature="method#loadSpinnerDataProduct#0;class#NewStockForm#0" expanded="false" />
+            <element signature="method#existUnitTable#0;class#NewStockForm#0" expanded="false" />
+            <element signature="method#existProductTable#0;class#NewStockForm#0" expanded="false" />
+            <element signature="class#RemoteDataTask#0;class#NewStockForm#0" expanded="false" />
+            <element signature="class#PostStockAT#0;class#NewStockForm#0" expanded="false" />
+            <element signature="method#getLocation#0;class#NewStockForm#0" expanded="false" />
+            <element signature="method#emptyFields#0;class#NewStockForm#0" expanded="false" />
+            <element signature="method#showGPSDisabledAlertToUser#0;class#NewStockForm#0" expanded="false" />
+            <element signature="method#onResume#0;class#NewStockForm#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
