@@ -15,6 +15,8 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +39,7 @@ public class ClientBuy extends ActionBarActivity {
     private String WS_ACTION_ORDERS = "api/Orders";
     private String GeoUrl    = "https://maps.googleapis.com/maps/";
     private String GeoParams = "api/geocode/json?latlng=";
+    private String blockCharacterSet = "~#^|$%&*!+(/-)@?:;',";
 
     ArrayList<String> buyMarketArray;
     ProgressDialog mProgressDialog;
@@ -54,8 +57,7 @@ public class ClientBuy extends ActionBarActivity {
     String      PhoneStr;
     int         id_stock;
     int         QtyInt;
-
-    Context context = this;
+    Context     context = this;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
@@ -88,8 +90,19 @@ public class ClientBuy extends ActionBarActivity {
         Qty = (EditText) findViewById(R.id.buy_qty);
         Buy = (Button) findViewById(R.id.buy_buyButton);
 
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        /*prevent special caracteres*/
+        Name.setFilters(new InputFilter[] { filter });
+        Phone.setFilters(new InputFilter[] { filter });
 
+        InputFilter[] FilterArray = new InputFilter[1];
+        FilterArray[0] = new InputFilter.LengthFilter(40);
+        Name.setFilters(FilterArray);
+
+        InputFilter[] FilterArray2 = new InputFilter[1];
+        FilterArray2[0] = new InputFilter.LengthFilter(15);
+        Phone.setFilters(FilterArray2);
+
+        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
             //nothing to do here!
         }else{
@@ -210,6 +223,7 @@ public class ClientBuy extends ActionBarActivity {
             }
         }
     }
+
     //Mostrar dialogo para activar gps
     private void showGPSDisabledAlertToUser(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -232,6 +246,7 @@ public class ClientBuy extends ActionBarActivity {
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
     }
+
     //Verificar y ejecutar metodos
     @Override
     protected void onResume(){
@@ -244,4 +259,15 @@ public class ClientBuy extends ActionBarActivity {
             Log.i("test", "it's not the first time");
         }
     }
+
+    private InputFilter filter = new InputFilter() {
+        @Override
+        public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+            if (source != null && blockCharacterSet.contains(("" + source))) {
+                return "";
+            }
+            return null;
+        }
+    };
+
 }
