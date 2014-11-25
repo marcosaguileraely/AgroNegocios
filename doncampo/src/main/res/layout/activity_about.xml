@@ -45,22 +45,22 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="AgroNegocios V.1.0\n\nDavid Alméciga @dagrinchi \n Marcos Aguilera @marcode_ely"
+            android:text="AgroNegocios V.1.0\n\nDavid Alméciga\n walmeciga@cool4code.com \n Marcos Aguilera \n maguilera@cool4code.com"
             android:id="@+id/text_credits"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.12"
             android:gravity="center_vertical|center_horizontal"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="11dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Esta aplicación requiere acceso a internet y puede consumir recursos de su plan de datos."
             android:id="@+id/text_warning"
             android:layout_gravity="center_horizontal"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="11dp" />
 
     </LinearLayout>
 

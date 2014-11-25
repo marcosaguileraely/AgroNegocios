@@ -35,15 +35,15 @@
                 android:layout_centerHorizontal="true" />
 
             <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Este es su inventario,\npor favor mantenlo actualizado"
-            android:id="@+id/tips_clave"
+                android:id="@+id/tips_clave"
                 android:gravity="right"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

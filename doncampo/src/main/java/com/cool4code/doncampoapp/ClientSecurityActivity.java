@@ -227,6 +227,10 @@ public class ClientSecurityActivity extends ActionBarActivity{
         Boolean existsAuth = existAuthTable();
         String tableName = "auth";
 
+        /*final Bundle extras = getIntent().getExtras();
+        String getAuthMessage = extras.getString("LOGOUT_MESSAGE");
+        Log.d("//Auth", "//Auth" + getAuthMessage);*/
+
         Log.d("//expiresMili", "//expiresMili " + expiresMili);
         long now = new Date().getTime();
 

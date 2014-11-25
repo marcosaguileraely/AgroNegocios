@@ -73,6 +73,8 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Salir"
+                android:onClick="onClick"
+                android:clickable="true"
                 android:id="@+id/home_salir"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_vertical|center_horizontal"
