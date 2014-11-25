@@ -76,24 +76,30 @@ public class ClientSecurityActivity extends ActionBarActivity{
 
         Boolean existsAuth = existAuthTable();
         String tableName = "auth";
-
         Log.d("//expiresMili", "//expiresMili " + expiresMili);
-        long now = new Date().getTime();
+        long now    = new Date().getTime();
 
         if(existsAuth == true){
-            DatabaseHandler checkExpires = new DatabaseHandler(getApplicationContext());
-            long miliExpiresDate = checkExpires.validateExpiresAt(tableName);
-            Log.d("//DateMillis", "//DateMillis " + miliExpiresDate);
-            if(now < miliExpiresDate){
-                Intent goToHome= new Intent(ClientSecurityActivity.this, MainActivity.class);
-                startActivity(goToHome);
+            DatabaseHandler authDataCount = new DatabaseHandler(getApplicationContext());
+            int count   = authDataCount.authHasData(tableName);
+            Log.d("//COUNT", "//COUNT " + count);
+            if(count >= 1){
+                DatabaseHandler checkExpires = new DatabaseHandler(getApplicationContext());
+                long miliExpiresDate = checkExpires.validateExpiresAt(tableName);
+                Log.d("//DateMillis", "//DateMillis " + miliExpiresDate);
+                if(now < miliExpiresDate){
+                    Intent goToHome= new Intent(ClientSecurityActivity.this, MainActivity.class);
+                    startActivity(goToHome);
+                }else{
+                    Toast toast = Toast.makeText(ClientSecurityActivity.this,"Credencial expirada. Por favor acceda nuevamente para renovarla.", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.show();
+                }
             }else{
-                Toast toast = Toast.makeText(ClientSecurityActivity.this,"Credencial expirada. Por favor acceda nuevamente para renovarla.", Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER, 0, 0);
-                toast.show();
+                Log.d("//Auth", "//Auth table no data, count : "+ count);
             }
         }else{
-
+            Log.d("//Auth", "//Auth table not exists :(:( ");
         }
 
         login = (Button) findViewById(R.id.farmer_login_button);
@@ -126,6 +132,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
             }
         });
     }
+
     //async task
     private class AsyncWS extends AsyncTask<Void, Void, Void> {
         File db =new File("/data/data/com.cool4code.doncampoapp/databases/placitadb");
@@ -205,6 +212,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
         }
     }
     //verificar existencia de la tabla Auth
+
     public Boolean existAuthTable(){
         SQLiteDatabase mDatabase = openOrCreateDatabase("placitadb", SQLiteDatabase.CREATE_IF_NECESSARY,null);
         Cursor c = null;
@@ -216,20 +224,17 @@ public class ClientSecurityActivity extends ActionBarActivity{
             c.close();
         }
         catch (Exception e) {
-            Log.d("checkingTable", "Units : "+" doesn't exist :(((");
+            Log.d("checkingTable", "Auth : "+" doesn't exist :(((");
         }
         return tableExists;
     }
     //onResume method
+
     @Override
     protected void onResume(){
         super.onResume();
         Boolean existsAuth = existAuthTable();
         String tableName = "auth";
-
-        /*final Bundle extras = getIntent().getExtras();
-        String getAuthMessage = extras.getString("LOGOUT_MESSAGE");
-        Log.d("//Auth", "//Auth" + getAuthMessage);*/
 
         Log.d("//expiresMili", "//expiresMili " + expiresMili);
         long now = new Date().getTime();

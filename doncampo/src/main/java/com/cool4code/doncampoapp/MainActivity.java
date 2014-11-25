@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
@@ -11,7 +12,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -45,6 +45,7 @@ public class MainActivity extends ActionBarActivity{
     String[] population;
 
     String url_playstore = "https://play.google.com/store/apps/details?id=com.irisinteractive.infografia_mintic&hl=es";
+    String social_msn = "Acabo de comprar y/o vender un producto agropecuario a través de #AGRONEGOCIOS, app de @AgronetMADR. Es gratis. Descárgala aquí: http://goo.gl/UnfiH1";
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
@@ -74,7 +75,6 @@ public class MainActivity extends ActionBarActivity{
 
         farmers.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("tocar", "click en boton farmer");
                 Intent goToFarmer= new Intent(MainActivity.this, FarmerHome.class);
                 startActivity(goToFarmer);
             }
@@ -82,7 +82,8 @@ public class MainActivity extends ActionBarActivity{
 
         logout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("tocar", "click en boton salir");
+                SQLiteDatabase mydb = getBaseContext().openOrCreateDatabase("placitadb", SQLiteDatabase.OPEN_READWRITE, null);
+                mydb.execSQL("DELETE FROM auth;");
                 Intent goToLogin= new Intent(MainActivity.this, ClientSecurityActivity.class);
                 goToLogin.putExtra("LOGOUT_MESSAGE", "Auth_LogOut");
                 startActivity(goToLogin);
@@ -91,7 +92,6 @@ public class MainActivity extends ActionBarActivity{
 
         clients.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("tocar", "click en boton client");
                 Intent goToClient= new Intent(MainActivity.this, ClientHome.class);
                 startActivity(goToClient);
             }
@@ -99,8 +99,7 @@ public class MainActivity extends ActionBarActivity{
 
         share_facebook.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("tocar", "click en boton compartir facebook");
-                String urlToShare = url_playstore;
+                String urlToShare = social_msn;
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_TEXT, urlToShare);
@@ -126,8 +125,7 @@ public class MainActivity extends ActionBarActivity{
 
         share_twitter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("tocar", "click en boton compartir twitter");
-                String urlToShare = url_playstore;
+                String urlToShare = social_msn;
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_TEXT, urlToShare);
@@ -142,7 +140,6 @@ public class MainActivity extends ActionBarActivity{
                         break;
                     }
                 }
-
                 // As fallback, launch sharer.php in a browser
                 if (!twitterAppFound) {
                     Toast.makeText(MainActivity.this, "¡Twitter app no esta instalada en el dispositivo!", Toast.LENGTH_SHORT).show();
