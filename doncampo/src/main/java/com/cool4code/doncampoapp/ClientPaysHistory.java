@@ -129,7 +129,7 @@ public class ClientPaysHistory extends ActionBarActivity implements AdapterView.
                 int objectId = i;
                 Id_Order = obj.getInt("Id");
                 PricePerUnit = objStock.getInt("PricePerUnit");
-                Stock_Qty = objStock.getInt("Qty");
+                Stock_Qty = obj.getInt("Qty");
                 ExpiresAt = objStock.getString("ExpiresAt");
 
                 Product_Name = objProduct.getString("Name");

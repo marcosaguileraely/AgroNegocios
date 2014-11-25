@@ -110,7 +110,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
                 String dni_value = farmer_login_dni.getText().toString();
                 String pass_value = farmer_login_dni.getText().toString();
                 if((dni_value.equals("")) && pass_value.equals("")){
-                    Toast.makeText(context, "¡Ingrese usuario y clave para acceder!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "¡Ingrese usuario y clave para acceder!", Toast.LENGTH_LONG).show();
                 }else{
                     new AsyncWS().execute();
                 }
@@ -126,7 +126,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
             }
         });
     }
-
+    //async task
     private class AsyncWS extends AsyncTask<Void, Void, Void> {
         File db =new File("/data/data/com.cool4code.doncampoapp/databases/placitadb");
         private ArrayList codeResponse;
@@ -204,7 +204,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
             }
         }
     }
-
+    //verificar existencia de la tabla Auth
     public Boolean existAuthTable(){
         SQLiteDatabase mDatabase = openOrCreateDatabase("placitadb", SQLiteDatabase.CREATE_IF_NECESSARY,null);
         Cursor c = null;
@@ -220,12 +220,16 @@ public class ClientSecurityActivity extends ActionBarActivity{
         }
         return tableExists;
     }
-
+    //onResume method
     @Override
     protected void onResume(){
         super.onResume();
         Boolean existsAuth = existAuthTable();
         String tableName = "auth";
+
+        /*final Bundle extras = getIntent().getExtras();
+        String getAuthMessage = extras.getString("LOGOUT_MESSAGE");
+        Log.d("//Auth", "//Auth" + getAuthMessage);*/
 
         Log.d("//expiresMili", "//expiresMili " + expiresMili);
         long now = new Date().getTime();

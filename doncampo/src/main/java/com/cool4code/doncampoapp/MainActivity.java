@@ -36,6 +36,7 @@ public class MainActivity extends ActionBarActivity{
     Button share_facebook;
     Button share_twitter;
     Button about;
+    TextView logout;
 
     ArrayAdapter<String> listAdapter;
     ListView list;
@@ -69,12 +70,22 @@ public class MainActivity extends ActionBarActivity{
         share_facebook = (Button) findViewById(R.id.share_facebook);
         share_twitter  = (Button) findViewById(R.id.share_twitter);
         about          = (Button) findViewById(R.id.about);
+        logout         = (TextView) findViewById(R.id.home_salir);
 
         farmers.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.d("tocar", "click en boton farmer");
                 Intent goToFarmer= new Intent(MainActivity.this, FarmerHome.class);
                 startActivity(goToFarmer);
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.d("tocar", "click en boton salir");
+                Intent goToLogin= new Intent(MainActivity.this, ClientSecurityActivity.class);
+                goToLogin.putExtra("LOGOUT_MESSAGE", "Auth_LogOut");
+                startActivity(goToLogin);
             }
         });
 
@@ -142,8 +153,8 @@ public class MainActivity extends ActionBarActivity{
 
         about.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent goToLogin= new Intent(MainActivity.this, AboutActivity.class);
-                startActivity(goToLogin);
+                Intent goToAbout= new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(goToAbout);
             }
         });
 

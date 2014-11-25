@@ -28,6 +28,12 @@ public class AdapterMyStock extends ArrayAdapter<MyStockModel>{
         this.myStockArrayList = myStockArrayList;
     }
 
+    public int getCount() {
+        if (myStockArrayList != null)
+            return myStockArrayList.size();
+        return 0;
+    }
+
     public long getItemId(int position) {
         if (myStockArrayList != null)
             return myStockArrayList.get(position).getStockId();

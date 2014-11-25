@@ -36,7 +36,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/left"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:paddingEnd="5dp">
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -145,7 +146,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/right"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:paddingEnd="30dp">
 
 
                 <TextView

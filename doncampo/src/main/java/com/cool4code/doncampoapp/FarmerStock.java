@@ -41,14 +41,16 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
 
     String token;
 
-    final Context context = this;
-    ProgressDialog mProgressDialog;
-    Dialog popDialog;
-    AdapterMyStock adapter;
-    ListView lview;
-    Button nuevo_stock;
+    final Context   context = this;
+    ProgressDialog  mProgressDialog;
+    AdapterMyStock  adapter;
+    Dialog          popDialog;
+    ListView        lview;
+    Button          nuevo_stock;
+    TextView        mensaje_vista;
 
     long idstock;
+    int count;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
@@ -69,10 +71,10 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
             abTitle.setTextColor(textColor);
         }
 
-        nuevo_stock = (Button) findViewById(R.id.new_stock);
-        lview = (ListView) findViewById(R.id.stockListView);
+        mensaje_vista   = (TextView) findViewById(R.id.tips_clave);
+        nuevo_stock     = (Button) findViewById(R.id.new_stock);
+        lview           = (ListView) findViewById(R.id.stockListView);
 
-        //lview.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1,stock));
         lview.setOnItemClickListener(this);
 
         nuevo_stock.setOnClickListener(new View.OnClickListener() {
@@ -86,7 +88,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Toast.makeText(this, "Has seleccionado ", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Has seleccionado ", Toast.LENGTH_SHORT).show();
         idstock = adapter.getItemId(position);
         ArrayList<String> detailsMyStock = adapter.getAllData(position);
         Log.d("//Stock", "// Stock" + detailsMyStock.toString());
@@ -111,6 +113,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         });
         popDialog.show();
     }
+
     //Obtener mis inventarios
     private class getMyStock extends AsyncTask<Void, Void, Void> {
         @Override
@@ -148,7 +151,14 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         @Override
         protected void onPostExecute(Void result) {
             mProgressDialog.hide();
-            Toast.makeText(FarmerStock.this, "¡Inventario cargado!", Toast.LENGTH_SHORT).show();
+            if(count == 0){
+                Toast.makeText(FarmerStock.this, "Si no tienes inventarios aun, puedes empezar creando uno.", Toast.LENGTH_SHORT).show();
+                mensaje_vista.setText("¿No tienes inventario aun?, empieza creando uno.");
+            }
+            else{
+                Toast.makeText(FarmerStock.this, "Inventario cargado exitosamente.", Toast.LENGTH_SHORT).show();
+                mensaje_vista.setText("Este es su inventario, por favor reviselo y actualícelo periodicamente.");
+            }
         }
     }
 
@@ -160,6 +170,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
 
         ArrayList<MyStockModel> items = new ArrayList<MyStockModel>();
         JSONArray jsonArray = stockArray;
+        count = jsonArray.length();
         Log.d("lenght", "===>" + jsonArray.length());
         try{
             for(int i=0 ; i<= jsonArray.length()-1; i++){
