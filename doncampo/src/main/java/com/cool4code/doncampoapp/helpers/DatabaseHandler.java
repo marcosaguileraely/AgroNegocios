@@ -108,6 +108,25 @@ public class DatabaseHandler extends SQLiteOpenHelper{
         return millis;
     }
 
+    //getting data count from auth table
+    public int authHasData(String table_name){
+        String selectQuery = "SELECT COUNT(*) FROM " + table_name;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        int count = 0;
+
+        if ( cursor.moveToFirst () ) {
+            do {
+                count = cursor.getInt(0);
+            } while (cursor.moveToNext());
+        }
+        // closing connection
+        cursor.close();
+        db.close();
+        return count;
+    }
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         /*not using yet*/
