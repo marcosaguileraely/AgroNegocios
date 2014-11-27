@@ -152,12 +152,12 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         protected void onPostExecute(Void result) {
             mProgressDialog.hide();
             if(count == 0){
-                Toast.makeText(FarmerStock.this, "Si no tienes inventarios aun, puedes empezar creando uno.", Toast.LENGTH_SHORT).show();
-                mensaje_vista.setText("¿No tienes inventario aun?, empieza creando uno.");
+                Toast.makeText(FarmerStock.this, "No tienes inventario aún.", Toast.LENGTH_SHORT).show();
+                mensaje_vista.setText("¿No tienes inventario aún?. \nEmpieza creando uno.");
             }
             else{
                 Toast.makeText(FarmerStock.this, "Inventario cargado exitosamente.", Toast.LENGTH_SHORT).show();
-                mensaje_vista.setText("Este es su inventario, por favor reviselo y actualícelo periodicamente.");
+                mensaje_vista.setText("Este es tu inventario, revisalo siempre y mantenlo al día.");
             }
         }
     }

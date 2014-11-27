@@ -30,17 +30,17 @@ import java.util.ArrayList;
 
 
 public class ClientPaysHistory extends ActionBarActivity implements AdapterView.OnItemClickListener {
-    final Context context = this;
-    ListView lview;
-    AdapterMyPurchases adapter;
-
-    ProgressDialog mProgressDialog;
+    final Context       context = this;
+    AdapterMyPurchases  adapter;
+    ProgressDialog      mProgressDialog;
+    ListView            lview;
 
     private String URL_WS = "http://placita.azurewebsites.net/";
     private String WS_ACTION_UNITS = "api/MyPurchases";
 
-    String token;
-    JSONArray myPurchasesArray;
+    String      token;
+    JSONArray   myPurchasesArray;
+    int         count;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
@@ -101,7 +101,12 @@ public class ClientPaysHistory extends ActionBarActivity implements AdapterView.
         @Override
         protected void onPostExecute(Void result) {
             mProgressDialog.hide();
-            Toast.makeText(ClientPaysHistory.this, "¡Placita de mercado lista!", Toast.LENGTH_SHORT).show();
+            if(count == 0){
+                Toast.makeText(ClientPaysHistory.this, "Tienes "+count+" productos en el listado de compras.", Toast.LENGTH_SHORT).show();
+            }
+            else{
+                Toast.makeText(ClientPaysHistory.this, "Tienes "+count+" productos en el listado de compras.", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -115,6 +120,7 @@ public class ClientPaysHistory extends ActionBarActivity implements AdapterView.
 
         ArrayList<MyPurchasesModel> items = new ArrayList<MyPurchasesModel>();
         JSONArray jsonArray = stockArray;
+        count = jsonArray.length();
         Log.d("lenght", "=>" + jsonArray.length());
         try{
             for(int i = 0 ; i <= jsonArray.length()-1; i++){

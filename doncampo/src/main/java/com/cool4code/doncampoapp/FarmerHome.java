@@ -31,21 +31,22 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class FarmerHome extends ActionBarActivity implements OnItemClickListener {
-    Button aprende;
-    Button inventario;
-    Button pedidos;
-    ListView lview;
+    Button          aprende;
+    Button          inventario;
+    Button          pedidos;
+    TextView        pedidos_text;
+    ListView        lview;
 
     private String URL_WS = "http://placita.azurewebsites.net/";
     private String WS_ACTION_UNITS = "api/MyOrders";
 
-    Context context = this;
-    ProgressDialog mProgressDialog;
-
+    Context         context = this;
+    ProgressDialog  mProgressDialog;
     AdapterMyOrders adapter;
-    String token;
-    JSONArray myOrdersArray;
+    String          token;
+    JSONArray       myOrdersArray;
 
+    int             count;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
@@ -66,21 +67,20 @@ public class FarmerHome extends ActionBarActivity implements OnItemClickListener
             abTitle.setTextColor(textColor);
         }
 
-        aprende = (Button) findViewById(R.id.farmer_home_aprende);
-        inventario = (Button) findViewById(R.id.farmer_home_inventario);
-        pedidos = (Button) findViewById(R.id.farmer_home_pedidos);
-        lview  = (ListView) findViewById(R.id.listview_home_orders);
+        aprende         = (Button) findViewById(R.id.farmer_home_aprende);
+        inventario      = (Button) findViewById(R.id.farmer_home_inventario);
+        pedidos         = (Button) findViewById(R.id.farmer_home_pedidos);
+        pedidos_text    = (TextView) findViewById(R.id.tips_clave);
+        lview           = (ListView) findViewById(R.id.listview_home_orders);
 
         pedidos.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("tocar", "click en pedidos");
                 new myOrdersAsyncTask().execute();
             }
         });
 
         inventario.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("tocar", "click en inventario");
                 Intent goToStock= new Intent(FarmerHome.this, FarmerStock.class);
                 startActivity(goToStock);
             }
@@ -88,14 +88,12 @@ public class FarmerHome extends ActionBarActivity implements OnItemClickListener
 
         aprende.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("tocar", "click en aprende");
                 Intent goToLearn= new Intent(FarmerHome.this, AprendozActivity.class);
                 startActivity(goToLearn);
             }
         });
 
         lview.setOnItemClickListener(this);
-
         new myOrdersAsyncTask().execute();
     }
 
@@ -134,7 +132,14 @@ public class FarmerHome extends ActionBarActivity implements OnItemClickListener
         @Override
         protected void onPostExecute(Void result) {
             mProgressDialog.hide();
-            Toast.makeText(FarmerHome.this, "¡Pedidos cargados!", Toast.LENGTH_SHORT).show();
+            if(count == 0){
+                Toast.makeText(FarmerHome.this, "No tienes pedidos aún", Toast.LENGTH_SHORT).show();
+                pedidos_text.setText("¿No tienes pedidos aún?. \nOfrece tus productos creando un inventario.");
+            }
+            else{
+                Toast.makeText(FarmerHome.this, "¡Pedidos cargados!", Toast.LENGTH_SHORT).show();
+                pedidos_text.setText("Aquí estan tus pedidos, revisa los detalles y contactate con el comprador.");
+            }
         }
     }
 
@@ -148,6 +153,7 @@ public class FarmerHome extends ActionBarActivity implements OnItemClickListener
 
         ArrayList<MyOrdersModel> items = new ArrayList<MyOrdersModel>();
         JSONArray jsonArray = stockArray;
+        count = jsonArray.length();
         Log.d("lenght", "->" + jsonArray.length());
         try{
             for(int i = 0 ; i <= jsonArray.length()-1; i++){

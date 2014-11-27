@@ -51,7 +51,7 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/product_cuantity"
-            android:maxLength="5"
+            android:maxLength="15"
             android:layout_alignTop="@+id/unit_spinner"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
