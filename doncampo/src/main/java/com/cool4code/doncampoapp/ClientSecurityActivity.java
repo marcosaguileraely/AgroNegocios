@@ -228,7 +228,6 @@ public class ClientSecurityActivity extends ActionBarActivity{
         }
         return tableExists;
     }
-    //onResume method
 
     @Override
     protected void onResume(){
@@ -254,5 +253,11 @@ public class ClientSecurityActivity extends ActionBarActivity{
         }else{
 
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent goToSearch = new Intent(ClientSecurityActivity.this, SearchActivity.class);
+        startActivity(goToSearch);
     }
 }

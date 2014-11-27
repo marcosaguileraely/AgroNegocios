@@ -551,4 +551,9 @@ public class NewStockForm extends ActionBarActivity{
             new RemoteDataTask().execute();
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        // When user press BackButton nothing going to happens. Issue by @luzmery
+    }
 }
