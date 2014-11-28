@@ -128,17 +128,25 @@
         <activity
             android:name=".XTuto3Activity"
             android:label="@string/title_activity_xtuto3"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".XTuto2Activity"
             android:label="@string/title_activity_xtuto2"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".XTuto4Activity"
             android:label="@string/title_activity_xtuto4"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".XTuto5Activity"
+            android:label="@string/title_activity_xtuto5" >
+        </activity>
+        <activity
+            android:name=".XTuto6Activity"
+            android:label="@string/title_activity_xtuto6" >
         </activity>
     </application>
 
