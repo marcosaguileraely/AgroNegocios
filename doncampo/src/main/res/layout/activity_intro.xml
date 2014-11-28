@@ -40,7 +40,7 @@
             android:layout_width="167dp"
             android:layout_height="wrap_content"
             android:id="@+id/intro_imagen_logo"
-            android:layout_above="@+id/intro_boton_ir_home"
+            android:layout_above="@+id/ayuda_boton_finalizar"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="34dp"
             android:src="@drawable/logo_agronegocios"
@@ -85,7 +85,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Iniciar"
-            android:id="@+id/intro_boton_ir_home"
+            android:id="@+id/ayuda_boton_finalizar"
             android:layout_alignParentBottom="true"
             android:background="#669900"
             android:textColor="#ffffffff" />

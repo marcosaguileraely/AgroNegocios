@@ -62,7 +62,7 @@ public class XTuto4Activity extends ActionBarActivity {
                     return false;
                 // IR ADELANTE E IR ATRAS
                 if(e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
-                    Intent goToTuto5 =  new Intent(XTuto4Activity.this, XTuto4Activity.class);
+                    Intent goToTuto5 =  new Intent(XTuto4Activity.this, XTuto5Activity.class);
                     startActivity(goToTuto5);
                 }  else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
                     Intent goToTuto3 =  new Intent(XTuto4Activity.this, XTuto3Activity.class);

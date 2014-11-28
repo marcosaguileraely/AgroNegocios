@@ -148,6 +148,10 @@
             android:name=".XTuto6Activity"
             android:label="@string/title_activity_xtuto6" >
         </activity>
+        <activity
+            android:name=".XTutoFinalActivity"
+            android:label="@string/title_activity_xtuto_final" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />

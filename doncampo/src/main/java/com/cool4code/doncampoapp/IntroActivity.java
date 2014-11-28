@@ -64,7 +64,7 @@ public class IntroActivity extends ActionBarActivity{
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        goToHome = (Button) findViewById(R.id.intro_boton_ir_home);
+        goToHome = (Button) findViewById(R.id.ayuda_boton_finalizar);
         goToHelp = (TextView) findViewById(R.id.intro_ayuda);
 
         goToHome.setOnClickListener(new View.OnClickListener() {
