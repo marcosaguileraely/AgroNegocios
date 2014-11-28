@@ -84,5 +84,4 @@ public class XTutoHomeActivity extends ActionBarActivity {
         Intent goToIntro =  new Intent(XTutoHomeActivity.this, IntroActivity.class);
         startActivity(goToIntro);
     }
-
 }
