@@ -27,5 +27,10 @@
     <string name="title_activity_farmer_order_details">Detalles</string>
     <string name="title_activity_history_details">Detalles</string>
     <string name="title_activity_about">Acerca de...</string>
+    <string name="title_activity_xtuto_home">Ayuda de usuario</string>
+    <string name="title_activity_xtuto1">Ayuda de usuario</string>
+    <string name="title_activity_xtuto2">Ayuda de usuario</string>
+    <string name="title_activity_xtuto3">Ayuda de usuario</string>
+    <string name="title_activity_xtuto4">Ayuda de usuario</string>
 
 </resources>
