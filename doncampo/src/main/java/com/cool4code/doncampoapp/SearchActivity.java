@@ -159,4 +159,10 @@ public class SearchActivity extends ActionBarActivity {
         }
         return items;
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent goToIntro =  new Intent(SearchActivity.this, IntroActivity.class);
+        startActivity(goToIntro);
+    }
 }

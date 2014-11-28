@@ -37,8 +37,8 @@ public class IntroActivity extends ActionBarActivity{
 
     File dbplacita =new File("/data/data/com.cool4code.doncampoapp/databases/placitadb");
 
-    Button goToHome;
-    Button Fire;
+    Button      goToHome;
+    TextView    goToHelp;
     ProgressDialog mProgressDialog;
     Context context = this;
 
@@ -47,7 +47,6 @@ public class IntroActivity extends ActionBarActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-
 
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#669900")));
@@ -65,11 +64,20 @@ public class IntroActivity extends ActionBarActivity{
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        goToHome = (Button) findViewById(R.id.intro_boton_ir_home);
+        goToHome = (Button) findViewById(R.id.ayuda_boton_finalizar);
+        goToHelp = (TextView) findViewById(R.id.intro_ayuda);
+
         goToHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent goToTerms = new Intent(IntroActivity.this, TermsActivity.class);
                 startActivity(goToTerms);
+            }
+        });
+
+        goToHelp.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent goToHelp = new Intent(IntroActivity.this, XTutoHomeActivity.class);
+                startActivity(goToHelp);
             }
         });
         new RemoteDataTask().execute();

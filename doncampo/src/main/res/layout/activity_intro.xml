@@ -40,12 +40,26 @@
             android:layout_width="167dp"
             android:layout_height="wrap_content"
             android:id="@+id/intro_imagen_logo"
-            android:layout_above="@+id/intro_boton_ir_home"
+            android:layout_above="@+id/ayuda_boton_finalizar"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="34dp"
             android:src="@drawable/logo_agronegocios"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.21" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ayuda"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:id="@+id/intro_ayuda"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#ff4444"
+            android:textColor="#fff"
+            android:textSize="18dp" />
 
         <!--<Button
             style="?android:attr/buttonStyleSmall"
@@ -71,7 +85,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Iniciar"
-            android:id="@+id/intro_boton_ir_home"
+            android:id="@+id/ayuda_boton_finalizar"
             android:layout_alignParentBottom="true"
             android:background="#669900"
             android:textColor="#ffffffff" />
