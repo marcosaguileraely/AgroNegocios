@@ -36,7 +36,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/left"
-                android:gravity="center_vertical"
                 android:paddingEnd="50dp">
 
                 <TextView
@@ -49,7 +48,8 @@
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
-                    android:paddingEnd="30dp" />
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -61,7 +61,8 @@
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
-                    android:paddingEnd="30dp" />
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -73,7 +74,8 @@
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
-                    android:paddingEnd="30dp" />
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -86,7 +88,8 @@
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
-                    android:paddingEnd="30dp" />
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -99,7 +102,8 @@
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
-                    android:paddingEnd="30dp" />
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -112,7 +116,8 @@
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
-                    android:paddingEnd="30dp" />
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -124,7 +129,8 @@
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
-                    android:paddingEnd="30dp" />
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -137,7 +143,8 @@
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
-                    android:paddingEnd="30dp" />
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -146,7 +153,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/right"
-                android:gravity="center_vertical"
                 android:paddingEnd="30dp"
                 android:paddingStart="30dp">
 
@@ -158,7 +164,7 @@
                     android:id="@+id/details_right_product"
                     android:layout_gravity="center_horizontal"
                     android:textSize="20dp"
-                    android:text="ASDSADASD" />
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -166,7 +172,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_unit"
                     android:textSize="20dp"
-                    android:text="ASDASD" />
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -175,7 +181,7 @@
                     android:id="@+id/details_right_qty"
                     android:layout_gravity="center_horizontal"
                     android:textSize="20dp"
-                    android:text="ASDDADS" />
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -184,7 +190,7 @@
                     android:id="@+id/details_right_price"
                     android:layout_gravity="center_horizontal"
                     android:textSize="20dp"
-                    android:text="ASDASDA" />
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -193,7 +199,7 @@
                     android:id="@+id/details_right_expires"
                     android:layout_gravity="center_horizontal"
                     android:textSize="20dp"
-                    android:text="ASASDA" />
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -202,7 +208,7 @@
                     android:id="@+id/details_right_location"
                     android:layout_gravity="center_horizontal"
                     android:textSize="20dp"
-                    android:text="SDAASDASAD" />
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -211,7 +217,7 @@
                     android:id="@+id/details_right_farmer"
                     android:layout_gravity="center_horizontal"
                     android:textSize="20dp"
-                    android:text="SADASDA" />
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -220,7 +226,7 @@
                     android:id="@+id/details_right_email"
                     android:layout_gravity="right"
                     android:textSize="20dp"
-                    android:text="ASDASD" />
+                    android:layout_marginTop="20dp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

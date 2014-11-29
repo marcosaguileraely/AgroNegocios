@@ -143,23 +143,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_history_details.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_history_details.xml">
+      <file leaf-file-name="activity_about.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_about.xml">
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3795">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_history_details.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_history_details.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4095">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -1268,7 +1255,6 @@
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/services/InputFilterMinMax.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_buy.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/ClientBuy.java" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_about.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/helpers/AdapterMyStock.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/helpers/DatabaseHandler.java" />
@@ -1311,9 +1297,10 @@
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/AprendozActivity2.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/AprendozActivity.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_market_details.xml" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_client_market_details.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_farmer_order_details.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_history_details.xml" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_about.xml" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_client_market_details.xml" />
       </list>
     </option>
   </component>
@@ -1545,7 +1532,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_Nexus_One_by_Google" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="305" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProcesAgro" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
   </component>
   <component name="RecentsManager">
@@ -1772,6 +1759,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36474165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.65349543" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1787,7 +1775,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31472492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36474165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1813,13 +1800,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/helpers/SpinnerObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45238096" vertical-offset="0" max-vertical-offset="630">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/helpers/DatabaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2085">
@@ -1906,6 +1886,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12437811" vertical-offset="0" max-vertical-offset="603">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1916,6 +1897,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3482587" vertical-offset="0" max-vertical-offset="603">
           <caret line="14" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1933,6 +1915,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3482587" vertical-offset="0" max-vertical-offset="603">
           <caret line="14" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1961,6 +1944,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3482587" vertical-offset="0" max-vertical-offset="603">
           <caret line="14" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1971,6 +1955,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3482587" vertical-offset="0" max-vertical-offset="603">
           <caret line="14" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1999,6 +1984,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3482587" vertical-offset="0" max-vertical-offset="603">
           <caret line="14" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2009,6 +1995,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.555555" vertical-offset="297" max-vertical-offset="900">
           <caret line="46" column="50" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2122,6 +2109,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2198,31 +2186,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_client_market_details.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3825">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_market_details.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3705">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_farmer_order_details.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3795">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -2253,9 +2219,42 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_client_market_details.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3825">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_farmer_order_details.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3795">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_history_details.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3795">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_about.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
