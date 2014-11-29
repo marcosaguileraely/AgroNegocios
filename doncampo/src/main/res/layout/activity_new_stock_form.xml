@@ -117,7 +117,22 @@
                 android:textSize="14dp"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
-                android:background="#0099cc" />
+                android:background="#0099cc"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:drawableTop="@drawable/abc_ic_clear"
+                android:gravity="center"
+                android:id="@+id/cancelar_stock_data"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="#ff4444"
+                android:layout_weight="1" />
 
         </LinearLayout>
     </RelativeLayout>

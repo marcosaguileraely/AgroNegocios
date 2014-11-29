@@ -2,11 +2,9 @@ package com.cool4code.doncampoapp;
 
 import android.annotation.TargetApi;
 import android.app.ActionBar;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -27,7 +25,6 @@ import com.cool4code.doncampoapp.helpers.AdapterMyStock;
 import com.cool4code.doncampoapp.helpers.DatabaseHandler;
 import com.cool4code.doncampoapp.helpers.MyStockModel;
 import com.cool4code.doncampoapp.helpers.WebService;
-import com.cool4code.doncampoapp.services.DeleteStock;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -75,7 +72,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         nuevo_stock     = (Button) findViewById(R.id.new_stock);
         lview           = (ListView) findViewById(R.id.stockListView);
 
-        lview.setOnItemClickListener(this);
+        //lview.setOnItemClickListener(this);
 
         nuevo_stock.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -89,7 +86,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         //Toast.makeText(this, "Has seleccionado ", Toast.LENGTH_SHORT).show();
-        idstock = adapter.getItemId(position);
+        /*idstock = adapter.getItemId(position);
         ArrayList<String> detailsMyStock = adapter.getAllData(position);
         Log.d("//Stock", "// Stock" + detailsMyStock.toString());
         String idStock = detailsMyStock.get(0);
@@ -103,7 +100,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         Button details_stock= (Button) popDialog.findViewById(R.id.details_stock);
         delete_stock.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                showDeleteDialog();
+                //showDeleteDialog();
             }
         });
         details_stock.setOnClickListener(new View.OnClickListener() {
@@ -111,7 +108,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
                 Log.d("//details ", "// details ");
             }
         });
-        popDialog.show();
+        popDialog.show();*/
     }
 
     //Obtener mis inventarios
@@ -164,8 +161,8 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
 
     //Listado de inventarios
     public ArrayList<MyStockModel> generateData(JSONArray stockArray){
-        int objectId, stockId, product_id, Qty, unit_id, pricePerUnit, user_identification, user_phone;
-        String product_name, unit_name, expiresAt, user_email, user_name, created = null;
+        int objectId, stockId, product_id, Qty, unit_id, pricePerUnit, user_phone;
+        String product_name, unit_name, expiresAt, user_email, user_name, created = null, user_identification;
         double geo_lat, geo_long;
 
         ArrayList<MyStockModel> items = new ArrayList<MyStockModel>();
@@ -198,7 +195,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
 
                 user_email   = objEmail.getString("Email");
                 user_name    = objUser.getString("Name");
-                user_identification = objUser.getInt("Identification");
+                user_identification = objUser.getString("Identification");
                 user_phone   = objUser.getInt("Phone");
 
                 Log.d(" //i ", " //i :" + objectId + " stockId : " + stockId + " Product id : " + product_id + " Product name : " + product_name + " Unit name : " + unit_name + " User name : " +user_name );
@@ -211,7 +208,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
     }
 
     //Confirmar eliminacion
-    private void showDeleteDialog(){
+    /*private void showDeleteDialog(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
             alertDialogBuilder.setMessage("¿Está seguro de eliminar este inventario?")
                 .setCancelable(false)
@@ -227,7 +224,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
                                     Toast.makeText(context, "Inventario eliminado exitosamente", Toast.LENGTH_SHORT).show();
                                 } else {
                                     Toast.makeText(context, "Acción no realizada. Intente nuevamente.", Toast.LENGTH_SHORT).show();
-                                }*/
+                                }
                             }
                         });
         alertDialogBuilder.setNegativeButton("Cancelar",
@@ -240,5 +237,5 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
                 });
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
-    }
+    }*/
 }

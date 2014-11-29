@@ -4,11 +4,11 @@ package com.cool4code.doncampoapp.helpers;
  * Created by marcosantonioaguilerely on 11/1/14.
  */
 public class MyStockModel {
-    int objectId, stockId, product_id, Qty, unit_id, pricePerUnit, user_identification, user_phone;
-    String product_name, unit_name, expiresAt, user_email, user_name, created;
+    int objectId, stockId, product_id, Qty, unit_id, pricePerUnit, user_phone;
+    String product_name, unit_name, expiresAt, user_email, user_name, created, user_identification;
     double geo_lat, geo_long;
 
-    public MyStockModel(int objectId, int stockId, int product_id, int qty, int unit_id, int pricePerUnit, int user_identification, int user_phone, String product_name, String unit_name, String expiresAt, String user_email, String user_name, String created, double geo_lat, double geo_long) {
+    public MyStockModel(int objectId, int stockId, int product_id, int qty, int unit_id, int pricePerUnit, String user_identification, int user_phone, String product_name, String unit_name, String expiresAt, String user_email, String user_name, String created, double geo_lat, double geo_long) {
         this.objectId = objectId;
         this.stockId = stockId;
         this.product_id = product_id;
@@ -75,11 +75,11 @@ public class MyStockModel {
         this.pricePerUnit = pricePerUnit;
     }
 
-    public int getUser_identification() {
+    public String getUser_identification() {
         return user_identification;
     }
 
-    public void setUser_identification(int user_identification) {
+    public void setUser_identification(String user_identification) {
         this.user_identification = user_identification;
     }
 
