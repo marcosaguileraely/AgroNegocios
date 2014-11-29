@@ -37,7 +37,7 @@
                 android:layout_weight="1"
                 android:id="@+id/left"
                 android:gravity="center_vertical"
-                android:paddingEnd="5dp">
+                android:paddingEnd="50dp">
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -45,7 +45,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Producto"
                     android:id="@+id/details_left_product"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
@@ -57,7 +57,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Unidad"
                     android:id="@+id/details_left_unit"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
@@ -69,7 +69,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Cantidad"
                     android:id="@+id/details_left_qty"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
@@ -82,7 +82,7 @@
                     android:text="Precio por unidad"
                     android:id="@+id/details_left_price"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
@@ -95,7 +95,7 @@
                     android:text="Fecha vencimiento"
                     android:id="@+id/details_left_expires"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
@@ -108,7 +108,7 @@
                     android:text="Ubicación"
                     android:id="@+id/details_left_location"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
@@ -120,7 +120,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Productor"
                     android:id="@+id/details_left_farmer"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
@@ -133,7 +133,7 @@
                     android:text="E-mail"
                     android:id="@+id/details_left_email"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
@@ -147,7 +147,8 @@
                 android:layout_weight="1"
                 android:id="@+id/right"
                 android:gravity="center_vertical"
-                android:paddingEnd="30dp">
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp">
 
 
                 <TextView
@@ -156,7 +157,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_product"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:text="ASDSADASD" />
 
                 <TextView
@@ -164,7 +165,7 @@
                     android:layout_height="34dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_unit"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:text="ASDASD" />
 
                 <TextView
@@ -173,7 +174,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_qty"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:text="ASDDADS" />
 
                 <TextView
@@ -182,7 +183,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_price"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:text="ASDASDA" />
 
                 <TextView
@@ -191,7 +192,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_expires"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:text="ASASDA" />
 
                 <TextView
@@ -200,7 +201,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_location"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="11dp"
+                    android:textSize="20dp"
                     android:text="SDAASDASAD" />
 
                 <TextView
@@ -209,7 +210,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_farmer"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:text="SADASDA" />
 
                 <TextView
@@ -218,7 +219,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_email"
                     android:layout_gravity="right"
-                    android:textSize="13dp"
+                    android:textSize="20dp"
                     android:text="ASDASD" />
             </LinearLayout>
         </LinearLayout>
