@@ -238,4 +238,10 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
     }*/
+
+    @Override
+    public void onBackPressed() {
+        Intent goToHome = new Intent(FarmerStock.this, FarmerHome.class);
+        startActivity(goToHome);
+    }
 }

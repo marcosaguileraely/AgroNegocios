@@ -124,7 +124,7 @@ public class SingUp extends ActionBarActivity {
         protected void onPostExecute(Void result) {
             if(code == 200){
                 mProgressDialog.dismiss();
-                Toast.makeText(context, "Usuario creado exitosamente", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Usuario creado exitosamente.", Toast.LENGTH_SHORT).show();
                 Intent iraLogin = new Intent(SingUp.this, ClientSecurityActivity.class);
                 startActivity(iraLogin);
             }else {
