@@ -64,6 +64,7 @@ public class NewStockForm extends ActionBarActivity{
     EditText    price;
     EditText    date;
     Button      save_data;
+    Button      cancel;
     Button      date_picker;
 
     JSONObject  jsonObj = new JSONObject();
@@ -115,6 +116,7 @@ public class NewStockForm extends ActionBarActivity{
         price     = (EditText) findViewById(R.id.product_price);
         date      = (EditText) findViewById(R.id.expires_date);
         save_data = (Button) findViewById(R.id.save_stock_data);
+        cancel    = (Button) findViewById(R.id.cancelar_stock_data);
         date_picker = (Button) findViewById(R.id.date_picker_selector);
 
         save_data.setEnabled(true);
@@ -154,84 +156,98 @@ public class NewStockForm extends ActionBarActivity{
             }
         });
 
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToStock =  new Intent(NewStockForm.this, FarmerStock.class);
+                startActivity(goToStock);
+            }
+        });
+
         save_data.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                int productId = Integer.parseInt(String.valueOf( ((SpinnerObject) products.getSelectedItem()).getId()) );
-                int unitId = Integer.parseInt(String.valueOf(((SpinnerObject) units.getSelectedItem()).getId()));
+                final LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
-                String qty_data     = qty.getText().toString();
-                String price_data   = price.getText().toString();
-                String date_data    = date.getText().toString();
+                if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+                    int productId = Integer.parseInt(String.valueOf( ((SpinnerObject) products.getSelectedItem()).getId()) );
+                    int unitId = Integer.parseInt(String.valueOf(((SpinnerObject) units.getSelectedItem()).getId()));
 
-                if(qty_data.isEmpty() || price_data.isEmpty() || date_data.isEmpty()){
-                    save_data.setEnabled(true);
-                    Toast.makeText(context, "¡Todos los campos son requeridos!" , Toast.LENGTH_SHORT).show();
+                    String qty_data     = qty.getText().toString();
+                    String price_data   = price.getText().toString();
+                    String date_data    = date.getText().toString();
+
+                    if(qty_data.isEmpty() || price_data.isEmpty() || date_data.isEmpty()){
+                        save_data.setEnabled(true);
+                        Toast.makeText(context, "¡Todos los campos son requeridos!" , Toast.LENGTH_SHORT).show();
+                    }else{
+                        save_data.setEnabled(false);
+                        double dqty         = Double.parseDouble(qty.getText().toString());
+                        double dprice       = Double.parseDouble(price.getText().toString());
+                        String expire_date  = date.getText().toString();
+
+                        //LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+                        Location location = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
+                        longitude    = location.getLongitude();
+                        latitude     = location.getLatitude();
+                        Log.d("->", " Lat-> " + latitude + " Long-> " + longitude);
+
+                        WebService geo      = new WebService(GeoUrl, GeoParams);
+                        ArrayList geoArray  = geo.WSGetGeoCode(latitude, longitude);
+                        String geoString    = (String) geoArray.get(0);
+                        Log.d("Geo", "geo : " + geoString);
+                        String[] geoStringArray = geoString.trim().split("\\s*,\\s*");
+                        ArrayList<String> arryLocation = new ArrayList<String>();
+
+                        for(int i=0 ; i<= geoStringArray.length-1 ; i++){
+                            Log.d("Geo", "geo : " + geoStringArray[i]);
+                            arryLocation.add(geoStringArray[i]);
+                        }
+                        Log.d("String", "String : " + arryLocation);
+                        String geoAddress = (String) arryLocation.get(0);
+                        String geoTown    = (String) arryLocation.get(1);
+                        String geoState   = (String) arryLocation.get(2);
+                        String geoCountry = (String) arryLocation.get(3);
+                        String yyy = null;
+                        try {
+                            String xxx = new String(geoTown.getBytes("ISO-8859-1"), "UTF-8");
+                            yyy = xxx;
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
+
+                        Log.d("Address", "Address : " + geoAddress);
+                        Log.d("Town", "Town : " + geoTown);
+                        Log.d("State", "State : " + geoState);
+                        Log.d("Country", "Country : " + geoCountry);
+
+                        String table_name = "auth";
+                        DatabaseHandler db = new DatabaseHandler(getApplicationContext());
+                        token = db.getAuth(table_name);
+
+                        try {
+                            jsonObj.put("ProductId", productId);
+                            jsonObj.put("UnitId", unitId);
+                            jsonObj.put("Qty", dqty);
+                            jsonObj.put("PricePerUnit", dprice);
+                            jsonObj.put("ExpiresAt", expire_date);
+                            JSONObject GeoPoint = new JSONObject();
+                            GeoPoint.put("Latitude", longitude);
+                            GeoPoint.put("Longitude", latitude);
+                            GeoPoint.put("Address", geoAddress);
+                            GeoPoint.put("Town", yyy);
+                            GeoPoint.put("State", geoState);
+                            GeoPoint.put("Country", geoCountry);
+                            jsonObj.put("GeoPoint", GeoPoint);
+                            Log.d("json", "json : " + jsonObj.toString());
+
+                            PostStockAT newExe = new PostStockAT();
+                            newExe.execute();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
                 }else{
-                    save_data.setEnabled(false);
-                    double dqty         = Double.parseDouble(qty.getText().toString());
-                    double dprice       = Double.parseDouble(price.getText().toString());
-                    String expire_date  = date.getText().toString();
-
-                    LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-                    Location location = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
-                    longitude    = location.getLongitude();
-                    latitude     = location.getLatitude();
-                    Log.d("->", " Lat-> " + latitude + " Long-> " + longitude);
-
-                    WebService geo      = new WebService(GeoUrl, GeoParams);
-                    ArrayList geoArray  = geo.WSGetGeoCode(latitude, longitude);
-                    String geoString    = (String) geoArray.get(0);
-                    Log.d("Geo", "geo : " + geoString);
-                    String[] geoStringArray = geoString.trim().split("\\s*,\\s*");
-                    ArrayList<String> arryLocation = new ArrayList<String>();
-
-                    for(int i=0 ; i<= geoStringArray.length-1 ; i++){
-                        Log.d("Geo", "geo : " + geoStringArray[i]);
-                        arryLocation.add(geoStringArray[i]);
-                    }
-                    Log.d("String", "String : " + arryLocation);
-                    String geoAddress = (String) arryLocation.get(0);
-                    String geoTown    = (String) arryLocation.get(1);
-                    String geoState   = (String) arryLocation.get(2);
-                    String geoCountry = (String) arryLocation.get(3);
-                    String yyy = null;
-                    try {
-                        String xxx = new String(geoTown.getBytes("ISO-8859-1"), "UTF-8");
-                        yyy = xxx;
-                    } catch (UnsupportedEncodingException e) {
-                        e.printStackTrace();
-                    }
-
-                    Log.d("Address", "Address : " + geoAddress);
-                    Log.d("Town", "Town : " + geoTown);
-                    Log.d("State", "State : " + geoState);
-                    Log.d("Country", "Country : " + geoCountry);
-
-                    String table_name = "auth";
-                    DatabaseHandler db = new DatabaseHandler(getApplicationContext());
-                    token = db.getAuth(table_name);
-
-                    try {
-                        jsonObj.put("ProductId", productId);
-                        jsonObj.put("UnitId", unitId);
-                        jsonObj.put("Qty", dqty);
-                        jsonObj.put("PricePerUnit", dprice);
-                        jsonObj.put("ExpiresAt", expire_date);
-                        JSONObject GeoPoint = new JSONObject();
-                        GeoPoint.put("Latitude", longitude);
-                        GeoPoint.put("Longitude", latitude);
-                        GeoPoint.put("Address", geoAddress);
-                        GeoPoint.put("Town", yyy);
-                        GeoPoint.put("State", geoState);
-                        GeoPoint.put("Country", geoCountry);
-                        jsonObj.put("GeoPoint", GeoPoint);
-                        Log.d("json", "json : " + jsonObj.toString());
-
-                        PostStockAT newExe = new PostStockAT();
-                        newExe.execute();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+                    showGPSDisabledAlertToUser();
                 }
             }
         });
@@ -532,6 +548,7 @@ public class NewStockForm extends ActionBarActivity{
                 new DialogInterface.OnClickListener(){
                     public void onClick(DialogInterface dialog, int id){
                         dialog.cancel();
+                        Toast.makeText(context, "Acción cancelada. La activación del GPS es importante." , Toast.LENGTH_SHORT).show();
                     }
                 });
         AlertDialog alert = alertDialogBuilder.create();
@@ -555,5 +572,10 @@ public class NewStockForm extends ActionBarActivity{
     @Override
     public void onBackPressed() {
         // When user press BackButton nothing going to happens. Issue by @luzmery
+    }
+
+    protected void onDestroy() {
+        super.onDestroy();
+        //state is saved here.
     }
 }

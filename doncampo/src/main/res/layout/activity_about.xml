@@ -32,7 +32,7 @@
             android:id="@+id/logo_minagricultura"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.12"
-            android:src="@drawable/about_minagricultura" />
+            android:src="@drawable/minagricultura" />
 
         <ImageView
             android:layout_width="fill_parent"
@@ -40,7 +40,7 @@
             android:id="@+id/logo_mintic"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.12"
-            android:src="@drawable/about_mintic" />
+            android:src="@drawable/logo_mintic" />
 
         <TextView
             android:layout_width="fill_parent"

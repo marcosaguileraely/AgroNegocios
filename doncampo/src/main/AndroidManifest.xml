@@ -142,15 +142,23 @@
         </activity>
         <activity
             android:name=".XTuto5Activity"
-            android:label="@string/title_activity_xtuto5" >
+            android:label="@string/title_activity_xtuto5"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".XTuto6Activity"
-            android:label="@string/title_activity_xtuto6" >
+            android:label="@string/title_activity_xtuto6"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".XTutoFinalActivity"
-            android:label="@string/title_activity_xtuto_final" >
+            android:label="@string/title_activity_xtuto_final"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AprendozActivity2"
+            android:label="@string/title_activity_aprendoz_activity2"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

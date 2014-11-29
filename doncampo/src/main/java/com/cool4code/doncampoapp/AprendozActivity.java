@@ -2,6 +2,7 @@ package com.cool4code.doncampoapp;
 
 import android.annotation.TargetApi;
 import android.app.ActionBar;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -23,7 +24,7 @@ public class AprendozActivity extends ActionBarActivity{
         setContentView(R.layout.activity_aprendoz);
 
         ActionBar bar = getActionBar();
-        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#669900")));
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0099cc")));
         int titleId;
         int textColor = getResources().getColor(android.R.color.white);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
@@ -41,5 +42,11 @@ public class AprendozActivity extends ActionBarActivity{
         webSettings.setJavaScriptEnabled(true);
         news.loadUrl(URL);
         news.setWebViewClient(new WebViewClient());
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent goToClientHome = new Intent(AprendozActivity.this, FarmerHome.class);
+        startActivity(goToClientHome);
     }
 }

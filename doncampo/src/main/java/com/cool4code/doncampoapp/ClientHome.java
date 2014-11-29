@@ -87,7 +87,7 @@ public class ClientHome extends ActionBarActivity implements AdapterView.OnItemC
         aprende.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.d("comprador", "click en aprende");
-                Intent goToLearn= new Intent(ClientHome.this, AprendozActivity.class);
+                Intent goToLearn= new Intent(ClientHome.this, AprendozActivity2.class);
                 startActivity(goToLearn);
             }
         });
@@ -95,12 +95,6 @@ public class ClientHome extends ActionBarActivity implements AdapterView.OnItemC
         lview.setOnItemClickListener(this);
 
         new littleStock().execute();
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent goToHome = new Intent(ClientHome.this, MainActivity.class);
-        startActivity(goToHome);
     }
 
     private class littleStock extends AsyncTask<Void, Void, Void> {
@@ -207,4 +201,11 @@ public class ClientHome extends ActionBarActivity implements AdapterView.OnItemC
         goToMarketDetails.putExtra("DetailsArray", detailsMarket);
         startActivity(goToMarketDetails);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent goToHome = new Intent(ClientHome.this, MainActivity.class);
+        startActivity(goToHome);
+    }
+
 }
