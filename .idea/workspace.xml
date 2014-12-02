@@ -142,7 +142,32 @@
     <favorites_list name="DonCampoApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="FarmerStock.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/FarmerStock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.2333875" vertical-offset="3733" max-vertical-offset="4350">
+              <caret line="157" column="89" selection-start-line="157" selection-start-column="89" selection-end-line="157" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3166#3393#0" expanded="true" />
+                <element signature="e#3382#3383#0" expanded="true" />
+                <element signature="e#4323#4453#0" expanded="true" />
+                <element signature="e#4442#4443#0" expanded="true" />
+                <element signature="e#5616#5860#0" expanded="true" />
+                <element signature="e#5845#5846#0" expanded="true" />
+                <element signature="e#6933#6947#0" expanded="true" />
+                <element signature="e#9294#9549#0" expanded="true" />
+                <element signature="e#9522#9523#0" expanded="true" />
+                <element signature="e#9625#9955#0" expanded="true" />
+                <element signature="e#9936#9937#0" expanded="true" />
+                <element signature="e#11744#11760#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -971,7 +996,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4221081639000" />
+        <entry key="$PROJECT_DIR$" value="4228788041000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1129,6 +1154,8 @@
                             <option value="/Applications/adt-bundle-mac-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/gridlayout-v7/20.0.0/gridlayout-v7-20.0.0.aar" />
                             <option value="/Applications/adt-bundle-mac-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0-sources.jar" />
                             <option value="/Applications/adt-bundle-mac-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.9/c403ed08ab8c34ececfa728f237a26d33e605a29/library-1.0.9-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.9/3a5961175b98494b89b7a24ac128e61e64ef7ef6/library-1.0.9.jar" />
                             <option value="/Applications/adt-bundle-mac-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0-sources.jar" />
                             <option value="/Applications/adt-bundle-mac-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar" />
                             <option value="$MODULE_DIR$/libs/Parse-1.5.1.jar" />
@@ -1236,15 +1263,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/my_orders_listview.xml" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/services/InputFilterMinMax.java" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_client_buy.xml" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/ClientBuy.java" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/helpers/AdapterMyStock.java" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/helpers/DatabaseHandler.java" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/MainActivity.java" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_aprendoz.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/helpers/AuxModel.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_farmer_home.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_farmer_stock.xml" />
@@ -1275,7 +1293,6 @@
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/NewStockForm.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/helpers/MyStockModel.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_aprendoz_activity2.xml" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/ClientHome.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/AprendozActivity2.java" />
@@ -1285,8 +1302,18 @@
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_history_details.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_about.xml" />
         <option value="$PROJECT_DIR$/doncampo/src/main/res/layout-w800dp-h1280dp/activity_client_market_details.xml" />
-        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/FarmerStock.java" />
         <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/SingUp.java" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_volley.xml" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_app_controller.xml" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/AppController.java" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/services/LruBitmapCache.java" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/services/AppController.java" />
+        <option value="$PROJECT_DIR$/doncampo/build.gradle" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/services/VolleySingleton.java" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/res/layout/activity_actions_elements.xml" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/Volley.java" />
+        <option value="$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/FarmerStock.java" />
       </list>
     </option>
   </component>
@@ -1426,11 +1453,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DonCampoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DonCampoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doncampo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="doncampoapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DonCampoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DonCampoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doncampo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doncampoapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1469,11 +1560,11 @@
     <key name="android.template.packageName">
       <recent name="com.cool4code.doncampoapp" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/doncampo/src/main/res/drawable-hdpi" />
-    </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doncampo/src/main/res/drawable-hdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.doncampo">
@@ -1672,11 +1763,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31472492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50303954" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42857143" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1686,7 +1778,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36474165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44680852" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44680852" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1699,10 +1791,39 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31472492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49544072" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3024316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50303954" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31472492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42857143" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36474165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44680852" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1722,75 +1843,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="361" />
+      <option name="time" value="369" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7562189" vertical-offset="774" max-vertical-offset="2370">
-          <caret line="82" column="42" selection-start-line="70" selection-start-column="12" selection-end-line="82" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/AboutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5714286" vertical-offset="0" max-vertical-offset="630">
-          <caret line="32" column="9" selection-start-line="21" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_xtuto_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12437811" vertical-offset="0" max-vertical-offset="603">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_xtuto2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3482587" vertical-offset="0" max-vertical-offset="603">
-          <caret line="14" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/XTuto3Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_xtuto3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3482587" vertical-offset="0" max-vertical-offset="603">
-          <caret line="14" column="41" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/XTuto2Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2917342" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="24" column="45" selection-start-line="18" selection-start-column="4" selection-end-line="24" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_xtuto1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42288557" vertical-offset="0" max-vertical-offset="603">
@@ -1987,19 +2043,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64285713" vertical-offset="1995" max-vertical-offset="2685">
-          <caret line="160" column="48" selection-start-line="160" selection-start-column="48" selection-end-line="160" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/AprendozActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7619048" vertical-offset="75" max-vertical-offset="705">
           <caret line="48" column="76" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2007,7 +2054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <caret line="49" column="77" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2059,7 +2105,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3795">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -2092,7 +2137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1458671" vertical-offset="0" max-vertical-offset="1755">
           <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2100,7 +2144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.50729334" vertical-offset="2833" max-vertical-offset="3450">
           <caret line="207" column="54" selection-start-line="207" selection-start-column="54" selection-end-line="207" selection-end-column="120" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2108,7 +2151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5591572" vertical-offset="1335" max-vertical-offset="2160">
           <caret line="142" column="103" selection-start-line="142" selection-start-column="62" selection-end-line="142" selection-end-column="103" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2116,7 +2158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73257697" vertical-offset="1348" max-vertical-offset="1965">
           <caret line="150" column="85" selection-start-line="150" selection-start-column="52" selection-end-line="150" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2132,17 +2173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78119934" vertical-offset="1513" max-vertical-offset="2130">
           <caret line="165" column="21" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/FarmerStock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1636953" vertical-offset="0" max-vertical-offset="3285">
-          <caret line="120" column="72" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="72" />
-          <folding>
-            <element signature="e#6628#6642#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2150,24 +2180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.63857377" vertical-offset="5426" max-vertical-offset="6270">
           <caret line="466" column="104" selection-start-line="466" selection-start-column="51" selection-end-line="466" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#4471:4740" expanded="false" />
-            <element signature="class#4791:5059" expanded="false" />
-            <element signature="e#8487#8495#0" expanded="true" />
-            <element signature="method#loadSpinnerDataUnit#0;class#NewStockForm#0" expanded="false" />
-            <element signature="e#11671#11686#0" expanded="true" />
-            <element signature="method#loadSpinnerDataProduct#0;class#NewStockForm#0" expanded="false" />
-            <element signature="e#12459#12474#0" expanded="true" />
-            <element signature="method#existUnitTable#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#existProductTable#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#getLocation#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#emptyFields#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#showGPSDisabledAlertToUser#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#onResume#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#onBackPressed#0;class#NewStockForm#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#NewStockForm#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2175,7 +2187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5952381" vertical-offset="450" max-vertical-offset="1080">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2183,7 +2194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11904762" vertical-offset="0" max-vertical-offset="1005">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2191,7 +2201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0061919503" vertical-offset="2803" max-vertical-offset="3540">
           <caret line="221" column="107" selection-start-line="221" selection-start-column="48" selection-end-line="221" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2208,6 +2217,160 @@
         <state vertical-scroll-proportion="-1.9442724" vertical-offset="2068" max-vertical-offset="2685">
           <caret line="134" column="71" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="71" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_volley.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6467662" vertical-offset="0" max-vertical-offset="603">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/services/LruBitmapCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="660">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#603#604#0" expanded="false" />
+            <element signature="e#641#642#0" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#936#937#0" expanded="false" />
+            <element signature="e#968#969#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5952381" vertical-offset="0" max-vertical-offset="630">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/services/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16666667" vertical-offset="45" max-vertical-offset="1140">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#729#730#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/services/VolleySingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11904762" vertical-offset="180" max-vertical-offset="975">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#785#801#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61904764" vertical-offset="2205" max-vertical-offset="2835">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="e#270#288#0" expanded="true" />
+            <element signature="e#449#467#0" expanded="true" />
+            <element signature="e#662#692#0" expanded="true" />
+            <element signature="e#1063#1103#0" expanded="true" />
+            <element signature="e#1258#1294#0" expanded="true" />
+            <element signature="e#1455#1488#0" expanded="true" />
+            <element signature="e#1644#1681#0" expanded="true" />
+            <element signature="e#1837#1874#0" expanded="true" />
+            <element signature="e#2029#2065#0" expanded="true" />
+            <element signature="e#2225#2257#0" expanded="true" />
+            <element signature="e#2414#2453#0" expanded="true" />
+            <element signature="e#2614#2655#0" expanded="true" />
+            <element signature="e#2814#2845#0" expanded="true" />
+            <element signature="e#3056#3088#0" expanded="true" />
+            <element signature="e#3246#3276#0" expanded="true" />
+            <element signature="e#3440#3486#0" expanded="true" />
+            <element signature="e#3640#3675#0" expanded="true" />
+            <element signature="e#3837#3881#0" expanded="true" />
+            <element signature="e#4044#4089#0" expanded="true" />
+            <element signature="e#4254#4294#0" expanded="true" />
+            <element signature="e#4452#4482#0" expanded="true" />
+            <element signature="e#4644#4679#0" expanded="true" />
+            <element signature="e#4838#4869#0" expanded="true" />
+            <element signature="e#5028#5059#0" expanded="true" />
+            <element signature="e#5218#5249#0" expanded="true" />
+            <element signature="e#5408#5439#0" expanded="true" />
+            <element signature="e#5598#5629#0" expanded="true" />
+            <element signature="e#5788#5819#0" expanded="true" />
+            <element signature="e#5982#6018#0" expanded="true" />
+            <element signature="e#6180#6223#0" expanded="true" />
+            <element signature="e#6374#6405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/Volley.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4376013" vertical-offset="120" max-vertical-offset="1305">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1586#1757#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
+            <element signature="e#2916#2932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/res/layout/activity_actions_elements.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="720">
+          <caret line="24" column="56" selection-start-line="16" selection-start-column="8" selection-end-line="24" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doncampo/src/main/java/com/cool4code/doncampoapp/FarmerStock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2333875" vertical-offset="3733" max-vertical-offset="4350">
+          <caret line="157" column="89" selection-start-line="157" selection-start-column="89" selection-end-line="157" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3166#3393#0" expanded="true" />
+            <element signature="e#3382#3383#0" expanded="true" />
+            <element signature="e#4323#4453#0" expanded="true" />
+            <element signature="e#4442#4443#0" expanded="true" />
+            <element signature="e#5616#5860#0" expanded="true" />
+            <element signature="e#5845#5846#0" expanded="true" />
+            <element signature="e#6933#6947#0" expanded="true" />
+            <element signature="e#9294#9549#0" expanded="true" />
+            <element signature="e#9522#9523#0" expanded="true" />
+            <element signature="e#9625#9955#0" expanded="true" />
+            <element signature="e#9936#9937#0" expanded="true" />
+            <element signature="e#11744#11760#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
