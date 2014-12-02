@@ -134,7 +134,7 @@ public class AdapterMyPurchases extends ArrayAdapter<MyPurchasesModel> {
         unit.setText(myPurchasesModel.getUnit_Name());
         qty.setText(qtyComplete);
         expiresAt.setText(expiresComplete);
-        address.setText(concatAddress);
+        //address.setText(concatAddress);
         // 5. return rowView
         return rowView;
     }
