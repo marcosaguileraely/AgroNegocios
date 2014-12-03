@@ -89,6 +89,7 @@ public class ClientBuy extends ActionBarActivity {
         Phone = (EditText) findViewById(R.id.buy_phone);
         Qty = (EditText) findViewById(R.id.buy_qty);
         Buy = (Button) findViewById(R.id.buy_buyButton);
+        Buy.setEnabled(true);
 
         /*prevent special caracteres*/
         Name.setFilters(new InputFilter[] { filter });
@@ -112,6 +113,7 @@ public class ClientBuy extends ActionBarActivity {
         Buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Buy.setEnabled(false);
                 String name_data  = Name.getText().toString();
                 String phone_data = Phone.getText().toString();
                 String qty_data   = Qty.getText().toString();

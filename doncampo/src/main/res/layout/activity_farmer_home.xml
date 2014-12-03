@@ -102,7 +102,7 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Aprende"
+                android:text="Noticias"
                 android:drawableTop="@android:drawable/ic_menu_info_details"
                 android:id="@+id/farmer_home_aprende"
                 android:textSize="14dp"

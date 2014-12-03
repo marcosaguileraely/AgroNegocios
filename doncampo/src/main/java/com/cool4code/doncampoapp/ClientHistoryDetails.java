@@ -62,7 +62,8 @@ public class ClientHistoryDetails extends ActionBarActivity {
         Unit.setText(detailsMarketArray.get(2));
         Qty.setText(detailsMarketArray.get(3));
         Price.setText(detailsMarketArray.get(4));
-        Expires.setText(detailsMarketArray.get(5));
+        String expires = detailsMarketArray.get(5);
+        Expires.setText(expires.substring(0, 10));
         Address.setText(detailsMarketArray.get(6));
         Farmer.setText(detailsMarketArray.get(7));
         Email.setText(detailsMarketArray.get(8));

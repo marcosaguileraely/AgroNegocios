@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:id="@+id/market_layout_container"
         android:layout_above="@+id/relativeLayout"
-        android:padding="15dp">
+        android:padding="0dp">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -46,7 +46,7 @@
                     android:text="Producto"
                     android:id="@+id/details_left_product"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -58,7 +58,7 @@
                     android:text="Unidad"
                     android:id="@+id/details_left_unit"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -70,7 +70,7 @@
                     android:text="Cant. comprada"
                     android:id="@+id/details_left_qty"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -83,7 +83,7 @@
                     android:id="@+id/details_left_price"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -96,7 +96,7 @@
                     android:id="@+id/details_left_expires"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -109,7 +109,7 @@
                     android:id="@+id/details_left_location"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -121,7 +121,7 @@
                     android:text="Comprador"
                     android:id="@+id/details_left_farmer"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -134,7 +134,7 @@
                     android:id="@+id/details_left_email"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -147,7 +147,7 @@
                     android:id="@+id/details_left_phone"
                     android:layout_gravity="right"
                     android:textSize="15dp"
-                    android:gravity="center_vertical|end"
+                    android:gravity="center_vertical"
                     android:textColor="#0099cc"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
