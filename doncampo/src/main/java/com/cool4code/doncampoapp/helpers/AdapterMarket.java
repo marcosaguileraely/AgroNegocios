@@ -133,7 +133,7 @@ public class AdapterMarket extends ArrayAdapter<MarketModel>{
         unit.setText(marketModel.getUnit_Name());
         qty.setText(qtyComplete);
         expiresAt.setText(expiresComplete);
-        address.setText(concatAddress);
+        //address.setText(concatAddress);
         // 5. return rowView
         return rowView;
     }
