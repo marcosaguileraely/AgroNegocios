@@ -36,7 +36,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/left"
-                android:gravity="center_vertical"
                 android:paddingEnd="5dp">
 
                 <TextView
@@ -46,7 +45,6 @@
                     android:text="Producto"
                     android:id="@+id/details_left_product"
                     android:textSize="15dp"
-                    android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -58,7 +56,6 @@
                     android:text="Unidad"
                     android:id="@+id/details_left_unit"
                     android:textSize="15dp"
-                    android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -70,7 +67,6 @@
                     android:text="Cantidad"
                     android:id="@+id/details_left_qty"
                     android:textSize="15dp"
-                    android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -83,7 +79,6 @@
                     android:id="@+id/details_left_price"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -96,7 +91,6 @@
                     android:id="@+id/details_left_expires"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -109,7 +103,6 @@
                     android:id="@+id/details_left_location"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -121,7 +114,6 @@
                     android:text="Productor"
                     android:id="@+id/details_left_farmer"
                     android:textSize="15dp"
-                    android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -134,7 +126,6 @@
                     android:id="@+id/details_left_email"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15dp"
-                    android:gravity="end"
                     android:textColor="#ec4b48"
                     android:textStyle="bold"
                     android:paddingEnd="30dp" />
@@ -145,9 +136,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/right"
-                android:gravity="center_vertical"
-                android:paddingEnd="30dp">
+                android:id="@+id/right">
 
 
                 <TextView
@@ -156,16 +145,14 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_product"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
-                    android:text="ASDSADASD" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="34dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_unit"
-                    android:textSize="15dp"
-                    android:text="ASDASD" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -173,8 +160,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_qty"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
-                    android:text="ASDDADS" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -182,8 +168,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_price"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
-                    android:text="ASDASDA" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -191,8 +176,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_expires"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
-                    android:text="ASASDA" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -200,8 +184,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_location"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="11dp"
-                    android:text="SDAASDASAD" />
+                    android:textSize="11dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -209,8 +192,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_farmer"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="15dp"
-                    android:text="SADASDA" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -218,8 +200,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/details_right_email"
                     android:layout_gravity="right"
-                    android:textSize="13dp"
-                    android:text="ASDASD" />
+                    android:textSize="13dp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

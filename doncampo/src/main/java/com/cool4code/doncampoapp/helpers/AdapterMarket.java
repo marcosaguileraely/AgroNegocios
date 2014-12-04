@@ -119,7 +119,7 @@ public class AdapterMarket extends ArrayAdapter<MarketModel>{
         String priceCOPString = copFormat.format(priceValue);
         String qtyString = Integer.toString(qtyValue);
         String qtyComplete = "Cantidad: " + qtyString;
-        String expiresComplete = "Vence: "+ expires;
+        String expiresComplete = "Vence: "+ expires.substring(0, 10);
 
         /*concat address to view*/
         String town = marketModel.getGeoPoint_Town();
@@ -133,7 +133,7 @@ public class AdapterMarket extends ArrayAdapter<MarketModel>{
         unit.setText(marketModel.getUnit_Name());
         qty.setText(qtyComplete);
         expiresAt.setText(expiresComplete);
-        address.setText(concatAddress);
+        //address.setText(concatAddress);
         // 5. return rowView
         return rowView;
     }

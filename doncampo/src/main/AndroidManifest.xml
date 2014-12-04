@@ -158,7 +158,17 @@
         <activity
             android:name=".AprendozActivity2"
             android:label="@string/title_activity_aprendoz_activity2"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Volley"
+            android:label="@string/title_activity_volley" >
+
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
         </activity>
     </application>
 

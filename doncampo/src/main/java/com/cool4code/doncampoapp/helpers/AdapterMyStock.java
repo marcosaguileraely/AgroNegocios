@@ -99,7 +99,7 @@ public class AdapterMyStock extends ArrayAdapter<MyStockModel>{
         String priceCOPString = copFormat.format(priceValue);
         String qtyString = Integer.toString(qtyValue);
         String qtyComplete = "Cantidad: " + qtyString;
-        String expiresComplete = "Vence: "+ expires;
+        String expiresComplete = "Vence: "+ expires.substring(0, 10);
 
         // 4. Set the text for textView
         product_name.setText(myStockModel.getProduct_name());

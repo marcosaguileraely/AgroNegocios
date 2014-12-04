@@ -116,7 +116,7 @@ public class SearchActivity extends ActionBarActivity {
         Log.d("search", "->"+searchData);
         if(searchData.equals("")){
             Log.d("searchData", "Vacio: " + searchData);
-            Cursor c= mydb.rawQuery("SELECT Product_Name, Location, Unit_Name, PriceAvgPerUnit, Created FROM prices ORDER BY Created DESC, Product_Name ASC, PriceAvgPerUnit DESC", null);
+            Cursor c= mydb.rawQuery("SELECT Product_Name, Location, Unit_Name, PriceAvgPerUnit, Created FROM prices ORDER BY Created DESC, Product_Name ASC, Location ASC", null);
             int count= c.getCount();
 
             Toast toast = Toast.makeText(SearchActivity.this,"Hemos consechado " + count + " productos.", Toast.LENGTH_SHORT);
@@ -137,7 +137,7 @@ public class SearchActivity extends ActionBarActivity {
             mydb.close();
         }else{
             Log.d("searchData", "No vacio: " + searchData);
-            Cursor c = mydb.rawQuery("SELECT Product_Name, Location, Unit_Name, PriceAvgPerUnit FROM prices WHERE Product_Name like '%"+searchData+"%' OR Location like '%"+searchData+"%' ORDER BY Created DESC, Product_Name ASC", null);
+            Cursor c = mydb.rawQuery("SELECT Product_Name, Location, Unit_Name, PriceAvgPerUnit FROM prices WHERE Product_Name like '%"+searchData+"%' OR Location like '%"+searchData+"%' ORDER BY Created DESC, Product_Name ASC, Location ASC", null);
             int count = c.getCount();
 
             Toast toast = Toast.makeText(SearchActivity.this,"Hemos consechado " + count + " productos.", Toast.LENGTH_SHORT);

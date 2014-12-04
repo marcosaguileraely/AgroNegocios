@@ -184,6 +184,7 @@ public class NewStockForm extends ActionBarActivity{
                         double dqty         = Double.parseDouble(qty.getText().toString());
                         double dprice       = Double.parseDouble(price.getText().toString());
                         String expire_date  = date.getText().toString();
+                        String sub_date     = expire_date.substring(0, 10);
 
                         //LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
                         Location location = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
@@ -207,6 +208,7 @@ public class NewStockForm extends ActionBarActivity{
                         String geoTown    = (String) arryLocation.get(1);
                         String geoState   = (String) arryLocation.get(2);
                         String geoCountry = (String) arryLocation.get(3);
+                        String myTown     = remove(geoTown);
                         String yyy = null;
                         try {
                             String xxx = new String(geoTown.getBytes("ISO-8859-1"), "UTF-8");
@@ -216,7 +218,7 @@ public class NewStockForm extends ActionBarActivity{
                         }
 
                         Log.d("Address", "Address : " + geoAddress);
-                        Log.d("Town", "Town : " + geoTown);
+                        Log.d("Town", "Town : " + myTown);
                         Log.d("State", "State : " + geoState);
                         Log.d("Country", "Country : " + geoCountry);
 
@@ -229,12 +231,12 @@ public class NewStockForm extends ActionBarActivity{
                             jsonObj.put("UnitId", unitId);
                             jsonObj.put("Qty", dqty);
                             jsonObj.put("PricePerUnit", dprice);
-                            jsonObj.put("ExpiresAt", expire_date);
+                            jsonObj.put("ExpiresAt", sub_date);
                             JSONObject GeoPoint = new JSONObject();
                             GeoPoint.put("Latitude", longitude);
                             GeoPoint.put("Longitude", latitude);
                             GeoPoint.put("Address", geoAddress);
-                            GeoPoint.put("Town", yyy);
+                            GeoPoint.put("Town", myTown);
                             GeoPoint.put("State", geoState);
                             GeoPoint.put("Country", geoCountry);
                             jsonObj.put("GeoPoint", GeoPoint);
@@ -553,6 +555,19 @@ public class NewStockForm extends ActionBarActivity{
                 });
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
+    }
+
+    //cleaning acents and special chars
+    public static String remove(String input) {
+        // Cadena de caracteres original a sustituir.
+        String original = "áàäéèëíìïóòöúùuñÁÀÄÉÈËÍÌÏÓÒÖÚÙÜÑçÇ";
+        // Cadena de caracteres ASCII que reemplazarán los originales.
+        String ascii    = "aaaeeeiiiooouuunAAAEEEIIIOOOUUUNcC";
+        String output   = input;
+        for (int i=0; i<original.length(); i++) {
+            output = output.replace(original.charAt(i), ascii.charAt(i));
+        }
+        return output;
     }
 
     //Verificar y ejecutar metodos

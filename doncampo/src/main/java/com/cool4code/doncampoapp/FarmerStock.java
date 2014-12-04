@@ -2,9 +2,11 @@ package com.cool4code.doncampoapp;
 
 import android.annotation.TargetApi;
 import android.app.ActionBar;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -21,22 +23,29 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.cool4code.doncampoapp.helpers.AdapterMyStock;
 import com.cool4code.doncampoapp.helpers.DatabaseHandler;
 import com.cool4code.doncampoapp.helpers.MyStockModel;
 import com.cool4code.doncampoapp.helpers.WebService;
+import com.cool4code.doncampoapp.services.VolleySingleton;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FarmerStock extends ActionBarActivity implements OnItemClickListener {
     private String URL_WS = "http://placita.azurewebsites.net/";
     private String WS_ACTION_UNITS = "api/MyStocks/0";
-    private String WS_ACTION_DELETE = "api/MyStocks/";
-
-    String token;
+    private String WS_ACTION_DELETE = "http://placita.azurewebsites.net/api/Stocks/";
 
     final Context   context = this;
     ProgressDialog  mProgressDialog;
@@ -46,8 +55,9 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
     Button          nuevo_stock;
     TextView        mensaje_vista;
 
-    long idstock;
-    int count;
+    long    idstock;
+    String  token;
+    int     count;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
@@ -72,7 +82,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         nuevo_stock     = (Button) findViewById(R.id.new_stock);
         lview           = (ListView) findViewById(R.id.stockListView);
 
-        //lview.setOnItemClickListener(this);
+        lview.setOnItemClickListener(this);
 
         nuevo_stock.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -86,7 +96,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         //Toast.makeText(this, "Has seleccionado ", Toast.LENGTH_SHORT).show();
-        /*idstock = adapter.getItemId(position);
+        idstock = adapter.getItemId(position);
         ArrayList<String> detailsMyStock = adapter.getAllData(position);
         Log.d("//Stock", "// Stock" + detailsMyStock.toString());
         String idStock = detailsMyStock.get(0);
@@ -95,20 +105,15 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         popDialog = new Dialog(context);
         popDialog.setContentView(R.layout.activity_actions_elements);
         popDialog.setTitle("Acciones");
-        popDialog.getWindow().setLayout(800, 700);
+        popDialog.getWindow().setLayout(800, 550);
         Button delete_stock= (Button) popDialog.findViewById(R.id.delete_stock);
         Button details_stock= (Button) popDialog.findViewById(R.id.details_stock);
         delete_stock.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //showDeleteDialog();
+                showDeleteDialog();
             }
         });
-        details_stock.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.d("//details ", "// details ");
-            }
-        });
-        popDialog.show();*/
+        popDialog.show();
     }
 
     //Obtener mis inventarios
@@ -154,7 +159,7 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
             }
             else{
                 Toast.makeText(FarmerStock.this, "Inventario cargado exitosamente.", Toast.LENGTH_SHORT).show();
-                mensaje_vista.setText("Este es tu inventario, revisalo siempre y mantenlo al día.");
+                mensaje_vista.setText("Este es tu inventario, revisalo siempre y mantenlo al día. \nSeleccione un inventario para eliminar.");
             }
         }
     }
@@ -208,23 +213,14 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
     }
 
     //Confirmar eliminacion
-    /*private void showDeleteDialog(){
+    private void showDeleteDialog(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
             alertDialogBuilder.setMessage("¿Está seguro de eliminar este inventario?")
                 .setCancelable(false)
                 .setPositiveButton("Aceptar",
                         new DialogInterface.OnClickListener(){
                             public void onClick(DialogInterface dialog, int id){
-                                String deleteElementString =  WS_ACTION_DELETE + idstock;
-                                DeleteStock deleteStock = new DeleteStock(URL_WS , deleteElementString);
-                                int code = deleteStock.DeleteMyStock(token);
-                                Log.d("//Delete", "//Code " + code);
-                                /*if (code == 200) {
-                                    new getMyStock().execute();
-                                    Toast.makeText(context, "Inventario eliminado exitosamente", Toast.LENGTH_SHORT).show();
-                                } else {
-                                    Toast.makeText(context, "Acción no realizada. Intente nuevamente.", Toast.LENGTH_SHORT).show();
-                                }
+                                VolleyDelete(token, WS_ACTION_DELETE, idstock);
                             }
                         });
         alertDialogBuilder.setNegativeButton("Cancelar",
@@ -237,11 +233,52 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
                 });
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
-    }*/
+    }
 
     @Override
     public void onBackPressed() {
         Intent goToHome = new Intent(FarmerStock.this, FarmerHome.class);
         startActivity(goToHome);
+    }
+
+    public void VolleyDelete(String token_user, String URL, long id_stock){
+        String URL_COMPLETE = URL + id_stock;
+        final ProgressDialog pDialog = new ProgressDialog(this);
+        final String token_auth = token_user;
+        pDialog.setMessage("Borrando inventario...");
+        pDialog.setCancelable(false);
+        pDialog.show();
+
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL_COMPLETE, null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Log.d("App", response.toString());
+                        pDialog.hide();
+                        popDialog.hide();
+                        Toast.makeText(context, "Inventario eliminado.", Toast.LENGTH_SHORT).show();
+                        new getMyStock().execute();
+                    }
+                }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                VolleyLog.d("App", "Error: " + error.getMessage());
+                pDialog.hide();
+                Toast.makeText(context, "No se completo la solicitud. Intente nuevamente.", Toast.LENGTH_SHORT).show();
+            }
+        }){
+            /**
+             * Passing some request headers
+             **/
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Authorization", "Bearer "+token_auth);
+                headers.put("Content-Type", "application/json; charset=utf-8");
+                return headers;
+            }
+        };
+        VolleySingleton.getInstance(getApplicationContext()).addToRequestQueue(jsonObjReq);
     }
 }

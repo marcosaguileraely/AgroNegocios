@@ -120,7 +120,7 @@ public class AdapterMyPurchases extends ArrayAdapter<MyPurchasesModel> {
         String priceCOPString = copFormat.format(priceValue);
         String qtyString = Integer.toString(qtyValue);
         String qtyComplete = "Cantidad: " + qtyString;
-        String expiresComplete = "Vence: "+ expires;
+        String expiresComplete = "Vence: "+ expires.substring(0, 10);
 
         /*concat address to view*/
         String town = myPurchasesModel.getTown();
@@ -134,7 +134,7 @@ public class AdapterMyPurchases extends ArrayAdapter<MyPurchasesModel> {
         unit.setText(myPurchasesModel.getUnit_Name());
         qty.setText(qtyComplete);
         expiresAt.setText(expiresComplete);
-        address.setText(concatAddress);
+        //address.setText(concatAddress);
         // 5. return rowView
         return rowView;
     }

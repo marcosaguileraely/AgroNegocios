@@ -120,7 +120,7 @@ public class AdapterMyOrders extends ArrayAdapter<MyOrdersModel> {
         String priceCOPString = copFormat.format(priceValue);
         String qtyString = Integer.toString(qtyValue);
         String qtyComplete = "Cantidad: " + qtyString;
-        String compradoComplete = "Fecha: "+ comprado;
+        String compradoComplete = "Fecha: "+ comprado.substring(0, 10);
 
         /*concat address to view*/
         String town = myOrdersModel.getTown();

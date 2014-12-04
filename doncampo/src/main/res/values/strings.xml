@@ -36,5 +36,7 @@
     <string name="title_activity_xtuto6">Ayuda de usuario</string>
     <string name="title_activity_xtuto_final">Ayuda de usuario</string>
     <string name="title_activity_aprendoz_activity2">Noticias</string>
+    <string name="title_activity_volley">Volley</string>
+    <string name="title_activity_app_controller">AppController</string>
 
 </resources>
