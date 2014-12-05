@@ -45,7 +45,7 @@ public class MainActivity extends ActionBarActivity{
     String[] population;
 
     String url_playstore = "https://play.google.com/store/apps/details?id=com.irisinteractive.infografia_mintic&hl=es";
-    String social_msn = "Acabo de comprar y/o vender un producto agropecuario a través de #AGRONEGOCIOS, app de @AgronetMADR. Es gratis. Descárgala aquí: http://goo.gl/UnfiH1";
+    String social_msn = "Acabo de comprar y/o vender un producto agropecuario a través de #AGRONEGOCIOS, app de @AgronetMADR descárgala: http://goo.gl/UnfiH1";
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override

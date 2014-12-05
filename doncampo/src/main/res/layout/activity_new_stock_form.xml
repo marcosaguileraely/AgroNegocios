@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:maxLength="10"
+            android:maxLength="11"
             android:id="@+id/product_price"
             android:layout_below="@+id/mystock_unit"
             android:layout_alignParentLeft="true"
