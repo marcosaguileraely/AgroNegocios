@@ -12,8 +12,9 @@
         android:layout_height="fill_parent"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:gravity="center_vertical|center_horizontal"
-        android:weightSum="1">
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,26 +41,24 @@
             android:textSize="18dp" />
 
         <ImageView
-                android:layout_width="168dp"
+                android:layout_width="138dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/home_img_farmer"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:src="@drawable/home_farmer2_"
                 android:layout_below="@+id/textView8"
                 android:layout_alignLeft="@+id/home_img_client"
                 android:layout_alignStart="@+id/home_img_client"
-                android:layout_gravity="center_horizontal"
-            android:layout_weight="0.34" />
+                android:layout_gravity="center_horizontal" />
 
             <ImageView
-                android:layout_width="168dp"
+                android:layout_width="138dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/home_img_client"
                 android:src="@drawable/home_farmer1_new"
                 android:layout_below="@+id/home_img_farmer"
                 android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.34" />
+                android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
 

@@ -145,11 +145,21 @@ public class NewStockForm extends ActionBarActivity{
                 mYear = c.get(Calendar.YEAR);
                 mMonth = c.get(Calendar.MONTH);
                 mDay = c.get(Calendar.DAY_OF_MONTH);
+
                 // Launch Date Picker Dialog
                 DatePickerDialog dpd = new DatePickerDialog(NewStockForm.this, new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                                date.setText( (year + "-" + (monthOfYear + 1) + "-" + dayOfMonth) );
+                                int month = monthOfYear + 1;
+                                String formattedMonth = "" + month;
+                                String formattedDayOfMonth = "" + dayOfMonth;
+                                if(month < 10){
+                                    formattedMonth = "0" + month;
+                                }
+                                if(dayOfMonth < 10){
+                                    formattedDayOfMonth = "0" + dayOfMonth;
+                                }
+                                date.setText(year + "-" + formattedMonth + "-" +formattedDayOfMonth);
                             }
                         }, mYear, mMonth, mDay);
                 dpd.show();
