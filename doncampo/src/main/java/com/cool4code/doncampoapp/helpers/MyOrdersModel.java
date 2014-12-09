@@ -11,18 +11,18 @@ public class MyOrdersModel {
 
     public MyOrdersModel(String product_Name, String unit_Name, String expiresAt, String address, String town, String geo_State, String country, String email, String name, String identification, String phone, int stock_Qty, int id_Order, double pricePerUnit) {
         Product_Name = product_Name;
-        Unit_Name = unit_Name;
-        ExpiresAt = expiresAt;
-        Address = address;
-        Town = town;
-        Geo_State = geo_State;
-        Country = country;
-        Email = email;
-        Name = name;
+        Unit_Name    = unit_Name;
+        ExpiresAt    = expiresAt;
+        Address      = address;
+        Town         = town;
+        Geo_State    = geo_State;
+        Country      = country;
+        Email        = email;
+        Name         = name;
         Identification = identification;
-        Phone = phone;
-        Stock_Qty = stock_Qty;
-        Id_Order = id_Order;
+        Phone        = phone;
+        Stock_Qty    = stock_Qty;
+        Id_Order     = id_Order;
         PricePerUnit = pricePerUnit;
     }
 

@@ -48,7 +48,6 @@
             android:layout_alignParentBottom="true"
             android:background="#669900"
             android:textColor="#ffffffff" />
-
     </RelativeLayout>
 
 </RelativeLayout>

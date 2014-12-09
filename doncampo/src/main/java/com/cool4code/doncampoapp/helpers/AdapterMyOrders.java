@@ -46,12 +46,12 @@ public class AdapterMyOrders extends ArrayAdapter<MyOrdersModel> {
     }
 
     public ArrayList getAllData(int position){
-        MyOrdersModel myOrdersModel= myPurchasesArrayList.get(position);
+        MyOrdersModel myOrdersModel = myPurchasesArrayList.get(position);
         ArrayList<String> arrayData = new ArrayList<String>();
-        String Id = Integer.toString(myOrdersModel.getId_Order());
+        String Id           = Integer.toString(myOrdersModel.getId_Order());
         String Product_Name = myOrdersModel.getProduct_Name();
-        String Unit_Name = myOrdersModel.getUnit_Name();
-        String Qty = Integer.toString(myOrdersModel.getStock_Qty());
+        String Unit_Name    = myOrdersModel.getUnit_Name();
+        String Qty          = Integer.toString(myOrdersModel.getStock_Qty());
 
         /*formating local currency*/
         double Price = myOrdersModel.getPricePerUnit();

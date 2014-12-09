@@ -40,7 +40,7 @@
             android:layout_width="167dp"
             android:layout_height="wrap_content"
             android:id="@+id/intro_imagen_logo"
-            android:layout_above="@+id/ayuda_boton_finalizar"
+            android:layout_above="@+id/eliminar_orden"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="34dp"
             android:src="@drawable/logo_agronegocios"
@@ -91,6 +91,5 @@
             android:textColor="#ffffffff" />
 
     </RelativeLayout>
-
 
 </RelativeLayout>
