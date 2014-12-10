@@ -253,7 +253,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:drawableTop="@android:drawable/ic_menu_delete"
-            android:text="Eliminar Orden"
+            android:text="Eliminar"
             android:id="@+id/eliminar_orden"
             android:layout_alignParentBottom="true"
             android:background="#0099cc"

@@ -49,6 +49,7 @@ public class FarmerOrderDetails extends ActionBarActivity {
     TextView Farmer;
     TextView Email;
     TextView Phone;
+
     String   Idorderstr;
     Integer  idorder;
 
