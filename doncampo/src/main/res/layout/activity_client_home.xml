@@ -66,7 +66,7 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:drawableTop="@android:drawable/ic_menu_myplaces"
+                android:drawableTop="@drawable/ic_action_placita"
                 android:text="      Placita       "
                 android:id="@+id/client_home_ofertas"
                 android:textColor="#ffffff"
@@ -80,7 +80,7 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:drawableTop="@android:drawable/ic_menu_directions"
+                android:drawableTop="@drawable/ic_action_compras"
                 android:text="Mis compras"
                 android:id="@+id/client_home_pedidos"
                 android:textColor="#ffffff"
@@ -96,7 +96,7 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:drawableTop="@android:drawable/ic_menu_info_details"
+                android:drawableTop="@drawable/ic_action_noticias"
                 android:text="Noticias"
                 android:id="@+id/share_twitter"
                 android:textSize="14dp"
