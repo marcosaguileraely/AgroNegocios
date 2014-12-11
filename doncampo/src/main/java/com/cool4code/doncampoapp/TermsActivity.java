@@ -44,17 +44,17 @@ public class TermsActivity extends ActionBarActivity {
             abTitle.setTextColor(textColor);
         }
 
-        Boolean existsLegal = existLegalTable();
+        //Boolean existsLegal = existLegalTable();
 
-            if(existsLegal == true){
-                Intent goToTerms = new Intent(TermsActivity.this, SearchActivity.class);
-                startActivity(goToTerms);
-            }else{
-                SQLiteDatabase mydb = getBaseContext().openOrCreateDatabase("placitadb", SQLiteDatabase.OPEN_READWRITE, null);
-                mydb.execSQL("CREATE TABLE IF NOT EXISTS "+ "legal" + "(agree INT);");
-                mydb.execSQL("INSERT INTO legal"+"(agree)"+
-                             "VALUES ('"+milidate+"');");
-            }
+//          if(existsLegal == true){
+//                Intent goToTerms = new Intent(TermsActivity.this, SearchActivity.class);
+//                startActivity(goToTerms);
+//            }else{
+//                SQLiteDatabase mydb = getBaseContext().openOrCreateDatabase("placitadb", SQLiteDatabase.OPEN_READWRITE, null);
+//                mydb.execSQL("CREATE TABLE IF NOT EXISTS "+ "legal" + "(agree INT);");
+//                mydb.execSQL("INSERT INTO legal"+"(agree)"+
+//                             "VALUES ('"+milidate+"');");
+//          }
 
         goToSearch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -75,8 +75,14 @@ public class TermsActivity extends ActionBarActivity {
             c.close();
         }
         catch (Exception e) {
-            Log.d("checkingTable", "Units : "+" doesn't exist :(((");
+            Log.d("checkingTable", "Terms Table : "+" doesn't exist :(((");
         }
         return tableExists;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent goToIntro = new Intent(TermsActivity.this, IntroActivity.class);
+        startActivity(goToIntro);
     }
 }

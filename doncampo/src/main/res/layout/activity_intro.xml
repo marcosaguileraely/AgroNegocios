@@ -48,8 +48,8 @@
             android:layout_weight="0.21" />
 
         <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Ayuda"
             android:onClick="onClick"
@@ -59,16 +59,22 @@
             android:gravity="center_vertical|center_horizontal"
             android:background="#ff4444"
             android:textColor="#fff"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
 
-        <!--<Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fire"
-            android:id="@+id/Fire"
-            android:layout_gravity="center_horizontal" />-->
-
+        <TextView
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Terminos y condiciones"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:id="@+id/intro_terminos"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#ff4444"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:layout_marginTop="8dp" />
 
     </LinearLayout>
 

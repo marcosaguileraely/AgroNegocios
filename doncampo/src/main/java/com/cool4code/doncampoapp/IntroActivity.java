@@ -37,9 +37,10 @@ public class IntroActivity extends ActionBarActivity{
 
     File dbplacita =new File("/data/data/com.cool4code.doncampoapp/databases/placitadb");
 
-    Button      goToHome;
-    TextView    goToHelp;
-    ProgressDialog mProgressDialog;
+    Button          goToHome;
+    TextView        goToHelp;
+    TextView        goToTerms;
+    ProgressDialog  mProgressDialog;
     Context context = this;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
@@ -64,12 +65,13 @@ public class IntroActivity extends ActionBarActivity{
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        goToHome = (Button) findViewById(R.id.ayuda_boton_finalizar);
-        goToHelp = (TextView) findViewById(R.id.intro_ayuda);
+        goToHome    = (Button) findViewById(R.id.ayuda_boton_finalizar);
+        goToHelp    = (TextView) findViewById(R.id.intro_ayuda);
+        goToTerms   = (TextView) findViewById(R.id.intro_terminos);
 
         goToHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent goToTerms = new Intent(IntroActivity.this, TermsActivity.class);
+                Intent goToTerms = new Intent(IntroActivity.this, SearchActivity.class);
                 startActivity(goToTerms);
             }
         });
@@ -78,6 +80,13 @@ public class IntroActivity extends ActionBarActivity{
             public void onClick(View v) {
                 Intent goToHelp = new Intent(IntroActivity.this, XTutoHomeActivity.class);
                 startActivity(goToHelp);
+            }
+        });
+
+        goToTerms.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent goToTerms = new Intent(IntroActivity.this, TermsActivity.class);
+                startActivity(goToTerms);
             }
         });
         new RemoteDataTask().execute();
