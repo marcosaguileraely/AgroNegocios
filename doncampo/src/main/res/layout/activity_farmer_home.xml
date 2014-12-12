@@ -75,7 +75,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Mis pedidos"
-                android:drawableTop="@drawable/ic_action_inventario"
+                android:drawableTop="@drawable/ic_action_pedidos"
                 android:id="@+id/farmer_home_pedidos"
                 android:textColor="#ffffff"
                 android:textSize="14dp"
