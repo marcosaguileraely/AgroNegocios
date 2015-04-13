@@ -13,6 +13,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
@@ -36,6 +37,7 @@ import com.cool4code.doncampoapp.helpers.WebService;
 import com.cool4code.doncampoapp.services.VolleySingleton;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -43,9 +45,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FarmerStock extends ActionBarActivity implements OnItemClickListener {
-    private String URL_WS = "http://placita.azurewebsites.net/";
+    private String URL_WS = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/";
     private String WS_ACTION_UNITS = "api/MyStocks/0";
-    private String WS_ACTION_DELETE = "http://placita.azurewebsites.net/api/Stocks/";
+    private String WS_ACTION_DELETE = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/api/Stocks/";
 
     final Context   context = this;
     ProgressDialog  mProgressDialog;
@@ -64,6 +66,13 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_farmer_stock);
+
+        int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8){
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
 
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0099cc")));
@@ -249,7 +258,15 @@ public class FarmerStock extends ActionBarActivity implements OnItemClickListene
         pDialog.setCancelable(false);
         pDialog.show();
 
-        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL_COMPLETE, null,
+        JSONObject obj = new JSONObject();
+        try {
+            obj.put("id", "1");
+            obj.put("name", "ok");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL_COMPLETE, obj,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {

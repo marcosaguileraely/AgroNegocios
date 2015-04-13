@@ -14,6 +14,7 @@ import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.text.InputFilter;
 import android.text.Spanned;
@@ -35,7 +36,7 @@ import java.util.ArrayList;
 
 
 public class ClientBuy extends ActionBarActivity {
-    private String URL_WS = "http://placita.azurewebsites.net/";
+    private String URL_WS = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/";
     private String WS_ACTION_ORDERS = "api/Orders";
     private String GeoUrl    = "https://maps.googleapis.com/maps/";
     private String GeoParams = "api/geocode/json?latlng=";
@@ -69,6 +70,14 @@ public class ClientBuy extends ActionBarActivity {
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ff4444")));
         int titleId;
         int textColor = getResources().getColor(android.R.color.white);
+
+        int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8){
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             titleId = getResources().getIdentifier("action_bar_title", "id", "android");
             TextView abTitle = (TextView) findViewById(titleId);

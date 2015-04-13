@@ -49,7 +49,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
     long expiresMili  = todayMili + plusDays;
     boolean firstTime = true;
 
-    private String URL_WS = "http://placita.azurewebsites.net/";
+    private String URL_WS = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/";
     private String WS_ACTION = "Token";
     private Integer codeResponse;
 
@@ -59,7 +59,14 @@ public class ClientSecurityActivity extends ActionBarActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_client_security);
+
+
+        int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8){
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
 
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#669900")));
@@ -224,7 +231,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
             c.close();
         }
         catch (Exception e) {
-            Log.d("checkingTable", "Auth : "+" doesn't exist :(((");
+            Log.d("checkingTable", "Auth : "+" doesn't exist.");
         }
         return tableExists;
     }

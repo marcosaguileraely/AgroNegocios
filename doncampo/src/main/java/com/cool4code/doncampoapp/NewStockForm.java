@@ -46,7 +46,7 @@ import java.util.Calendar;
 import java.util.List;
 
 public class NewStockForm extends ActionBarActivity{
-    private String URL_WS = "http://placita.azurewebsites.net/";
+    private String URL_WS = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/";
     private String WS_ACTION_UNITS = "api/Units";
     private String WS_ACTION_PRODUCTS = "api/Products";
     private String WS_ACTION_STOCK = "api/Stocks";
@@ -85,6 +85,13 @@ public class NewStockForm extends ActionBarActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_stock_form);
+
+        int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8){
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
 
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0099cc")));
