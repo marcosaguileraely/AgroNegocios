@@ -62,11 +62,11 @@
         revision="19.1.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
     <item
-        dex="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/library-1.0.9-4ed0b23ca269a447635159d3d32f8c802670271e.jar"
-        jar="/Users/marcosantonioaguilerely/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.9/3a5961175b98494b89b7a24ac128e61e64ef7ef6/library-1.0.9.jar"
+        dex="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/library-1.0.15-efe1a6c4edab71c2e3cc40dac1bfd9dbba823826.jar"
+        jar="/Users/marcosantonioaguilerely/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.15/9093a362d18c5f81f58e49d86dece57d9b6e1cb7/library-1.0.15.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="3a5961175b98494b89b7a24ac128e61e64ef7ef6"/>
+        sha1="9093a362d18c5f81f58e49d86dece57d9b6e1cb7"/>
     <item
         dex="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/build/intermediates/pre-dexed/debug/Parse-1.5.1-76ab7dac38209f5569551e558d40781cfb7098d2.jar"
         jar="/Users/marcosantonioaguilerely/Projects/DonCampoApp/doncampo/libs/Parse-1.5.1.jar"

@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
@@ -27,6 +28,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.cool4code.doncampoapp.helpers.DatabaseHandler;
 import com.cool4code.doncampoapp.services.VolleySingleton;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -37,7 +39,7 @@ import java.util.Map;
 public class FarmerOrderDetails extends ActionBarActivity {
     Context context = this;
     String  token;
-    private String WS_ACTION_DELETE = "http://placita.azurewebsites.net/api/Orders/";
+    private String WS_ACTION_DELETE = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/api/Orders/";
 
     ArrayList<String> detailsMarketArray;
     TextView Product;
@@ -58,6 +60,13 @@ public class FarmerOrderDetails extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_farmer_order_details);
+
+        int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8){
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
 
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0099cc")));
@@ -141,7 +150,15 @@ public class FarmerOrderDetails extends ActionBarActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL_COMPLETE, null,
+        JSONObject obj = new JSONObject();
+        try {
+            obj.put("id", "1");
+            obj.put("name", "ok");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL_COMPLETE, obj,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {

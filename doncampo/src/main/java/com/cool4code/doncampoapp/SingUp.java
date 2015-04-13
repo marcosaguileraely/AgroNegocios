@@ -26,7 +26,7 @@ import org.json.JSONObject;
 
 
 public class SingUp extends ActionBarActivity {
-    private String URL_WS = "http://placita.azurewebsites.net/";
+    private String URL_WS = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/";
     private String WS_ACTION_REGISTER = "api/Account/Register/" ;
 
     ProgressDialog mProgressDialog;
@@ -48,6 +48,13 @@ public class SingUp extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sing_up);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8){
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
 
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#669900")));

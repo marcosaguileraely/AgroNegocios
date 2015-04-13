@@ -14,8 +14,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.cool4code.doncampoapp.helpers.DatabaseHandler;
 import com.cool4code.doncampoapp.services.VolleySingleton;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -23,20 +25,25 @@ import java.util.Map;
 
 
 public class Volley extends ActionBarActivity {
-    private String WS_ACTION_DELETE = "http://placita.azurewebsites.net/api/Stocks/1162";
-    private String token = "eNJe4_5BAgUhYWNT-gsgcBInXd8IYyCn8HAPmjSeVdn9-DYKemrUarUYuk-JXWTsql9EWq74hbCfwisPfYXScD7MlNhtyUC2ykO4vvohx_BaPV_T0CCHnbWAv-egyp0WLI5EOP1TosktGXHE0rlG_dufp05alty6Rzn7HvY5XAj-__k0bQqfuUGOZDifm3oKEbCedAFeKLqxfP_u0vEijCIrOib7UN4zuaTCbeKk9a4HU-FvY9f4NQoe-AtKyXF2O6BP9R6m_bzJ5DX3DzLyMTcAPpX4GdXec2DWWEOu2ijzYIbCnyFI7Hk380VjUDtad_P8TQDdMp5p-oqcuruvPKnPCmPtg8oEgMZuLk2edDai3eGo2b7OiwVBiQE3sORHLTRHLyzY8hnR9ViatRw80GR_4xOe2Axz6JtJUvDBeF62F2qhQN2ifK7qNsNX1FbTrc_P-sSPPbDsrOzRwITEP3qV8fvwnX6QMEjKMH7s6bM";
+    private String WS_ACTION_DELETE = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/api/Stocks/1162";
     Context context = this;
+    private String token;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volley);
 
+        String table_name = "auth";
+        DatabaseHandler db = new DatabaseHandler(getApplicationContext());
+        token = db.getAuth(table_name);
+
         Button fire = (Button) findViewById(R.id.fire);
         fire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 VolleyDelete(token, WS_ACTION_DELETE);
+                Log.d("token", "tk ->"+token);
             }
         });
 
@@ -48,7 +55,15 @@ public class Volley extends ActionBarActivity {
         pDialog.setMessage("Loading...");
         pDialog.show();
 
-        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL, null,
+        JSONObject obj = new JSONObject();
+        try {
+            obj.put("id", "1");
+            obj.put("name", "ok");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL, obj,
                 new Response.Listener<JSONObject>() {
 
                     @Override

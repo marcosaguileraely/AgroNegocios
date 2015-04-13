@@ -27,6 +27,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.cool4code.doncampoapp.helpers.DatabaseHandler;
 import com.cool4code.doncampoapp.services.VolleySingleton;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ import java.util.Map;
 public class ClientHistoryDetails extends ActionBarActivity {
     Context context = this;
     String  token;
-    private String WS_ACTION_DELETE = "http://placita.azurewebsites.net/api/Orders/";
+    private String WS_ACTION_DELETE = "http://serviciosmadr.minagricultura.gov.co/MiPlacita/PlacitaWS/api/Orders/";
 
     ArrayList<String> detailsMarketArray;
     TextView Product;
@@ -144,7 +145,15 @@ public class ClientHistoryDetails extends ActionBarActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL_COMPLETE, null,
+        JSONObject obj = new JSONObject();
+        try {
+            obj.put("id", "1");
+            obj.put("name", "ok");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.DELETE, URL_COMPLETE, obj,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
