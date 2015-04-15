@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="AgroNegocios V.1.0\n\nDavid Alméciga\n walmeciga@cool4code.com \n Marcos Aguilera \n maguilera@cool4code.com"
+            android:text="AgroNegocios V.1.0\n\nDavid Alméciga\n walmeciga@cool4code.com \n Marcos Aguilera Ely \n maguilera@cool4code.com"
             android:id="@+id/text_credits"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.12"
