@@ -59,7 +59,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_client_security);
 
         int SDK_INT = android.os.Build.VERSION.SDK_INT;
         if (SDK_INT > 8){
@@ -253,7 +253,7 @@ public class ClientSecurityActivity extends ActionBarActivity{
                 Intent goToHome= new Intent(ClientSecurityActivity.this, MainActivity.class);
                 startActivity(goToHome);
             }else{
-                Toast toast = Toast.makeText(ClientSecurityActivity.this,"Credencial expirada. Por favor acceda nuevamente para renovarla.", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(ClientSecurityActivity.this,"Bienvenido de vuelta. Por favor accede para renovar tu credencial.", Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
             }
